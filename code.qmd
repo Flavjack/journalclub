@@ -26,6 +26,9 @@ readLines(con = 'https://inkaverse.com/setup.r') |>
 source(setup)
 
 # session_info()
+
+#> Rticle
+# browseURL("https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#")
 ```
 
 # Googlesheets connect to scores
@@ -70,6 +73,11 @@ scores <- list(s21.2, s22.1) %>%
   bind_rows() %>% 
   mutate(across(where(is.character), trimws))
 
+
+scores$user %>%
+  unique() %>% 
+  length()
+
 str(scores)
 
 model <- scores %>% 
@@ -81,11 +89,14 @@ model <- scores %>%
 
 model$anova %>% anova()
 
-model$meancomp %>% web_table()
-
 model$stats %>% web_table()
 
-plot <- model$meancomp %>% 
+tab <- model$meancomp %>% 
+  arrange(year, section)
+
+tab %>% web_table()
+
+plot <- tab %>% 
   plot_smr(type = "line"
            , x = "jc"
            , y = "score"
@@ -93,7 +104,7 @@ plot <- model$meancomp %>%
            , ylimits = c(14, 20, 1)
            , ylab = "Score (0-20)"
            , xlab = "Journal Club"
-           , glab = "Phytogenomics"
+           , glab = "Section"
            , sig = "sig"
            # , error = "ste"
            ) +
@@ -213,46 +224,32 @@ qst %>% web_table()
 # Word cloud for tools
 
 ```{r}
-# install.packages(c("tm", "wordcloud","SnowballC"))
-library(tm)
 library(wordcloud)
-library(SnowballC)
+
+recode <- c("Google académico" = "Google Scholar"
+            , "Tablas dinámicas" = "Pivot table")
 
 text <- fb %>% 
   rename(tools = "Herramientas que aprendí durante el curso") %>% 
   select(tools) %>% 
-  mutate(tools = gsub("Sci-Hub", "", tools)) %>%
-  mutate(tools = gsub("[[:space:]]", "", tools)) %>% 
-  mutate(tools = gsub(",", " ", tools)) %>% 
+  separate_rows(tools, sep = ",") %>% 
+  mutate(across(everything(), ~ trimws(.))) %>% 
   drop_na() %>% 
-  deframe() %>% 
-  paste0(collapse = " ") %>% 
-  write(file = "files/tools.txt")
-  
-words <- "files/" %>% 
-  DirSource() %>% 
-  Corpus()
-  
-inspect(words)
+  group_by(tools) %>% 
+  summarise(n = n()) %>% 
+  arrange(desc(n)) %>% 
+  mutate(freq = n/sum(n)*100) %>% 
+  mutate(tools = recode(tools, !!!recode))
 
-wc <- words %>% 
-  tm_map(stripWhitespace) %>% 
-  tm_map(removePunctuation)
-
-inspect(wc)
-
-set.seed(9)
-
+set.seed(2)
 png(filename = "files/wordcloud.png", width = 20, height = 20, units = "cm", res = 300)
-wordcloud(wc
-        , scale=c(5,0.5)     # Set min and max scale
-        , max.words=100      # Set top n words
-        , random.order=FALSE # Words in decreasing freq
-        , rot.per=0.35       # % of vertical words
-        , use.r.layout=FALSE # Use C++ collision detection
-        , colors=brewer.pal(8, "Dark2")
-        )
+wordcloud(words = text$tools
+          , freq = text$freq
+          , scale = c(5,0.5)
+          , min.freq = 1
+          , random.order = FALSE 
+          , colors = rev(c("forestgreen", "blue", "orange", "purple", "gray"))
+          )
 graphics.off()
-
 ```
 
