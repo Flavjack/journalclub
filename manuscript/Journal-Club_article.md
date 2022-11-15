@@ -1,4 +1,4 @@
-**Implementation of a journal club in a plant genetics lecture as a teaching-learning strategy during the COVID-19 pandemic**
+**Implementing a journal club as a teaching-learning strategy for plant genetics during the COVID-19 pandemic**
 
 Flavio Lozano-Isla^1\*^, Elizabeth Heros-Aguilar^1^, Andres Casas^2^
 
@@ -18,43 +18,43 @@ Flavio Lozano-Isla: ^^0000-0002-0714-669X
 
 ```Unknown element type at this position: UNSUPPORTED```# Abstract
 
-In the teaching-learning environment there are different tools to transmit information in an assertive way to students. In the areas of agricultural sciences, there are courses where the concepts are abstract, which generates disinterest in the participants due to their lack of association and practical application of what they are studying, limiting the critical sense of the students. Virtualization aggravated this during the COVID-19 pandemia. This paper presents the journal club methodology as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in virtual environments. The methodology was applied in two academic semesters (i.e. 2021 to 2022) in the plant genetics lectures. The students read four articles per academic semester and performed a critical essay in a group. The results show that more than 90% of the participants agree with its implementation and that they liked the articles. Whereas, 80% of the students consider that it is relevant to their education. The application of the methodology helped students to integrate theoretical knowledge and understand complex concepts in the practical application of the topics covered in the lectures. Additionally, the students presented an increase in critical thinking and an improvement in essay writing.
+In the teaching-learning environment there are different tools to share knowledge with students. In the areas of agricultural sciences, there are courses where the concepts are abstract, which generates disinterest in the participants due to their lack of association and practical application of what they are studying, thus limiting the critical sense of the students. Virtualization aggravated this shortcoming during the COVID-19 pandemia. This paper presents the journal club methodology as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in virtual environments. The methodology was applied in two consecutive academic semesters (i.e., 2021 to 2022) in the plant genetics lectures. The students read four articles per academic semester and performed a critical essay in a group. The results show that more than 90% of the participants agree with this journal club approach and that they liked the articles read. Furthermore, 80% of the students consider that it is relevant to their education. The application of the methodology helped students to integrate theoretical knowledge and understand complex concepts in the practical application of the topics covered in the lectures. Additionally, the students presented an increase in critical thinking and an improvement in essay writing.
 
-**Keywords:** JC, agriculture, plant genetics, sci-hub, research tools, soft skills
+**Keywords:** JC, agriculture, plant genetics, research tools, sci-hub, soft skills
 
 # 
 
 ```Unknown element type at this position: UNSUPPORTED```# Introduction
 
-The World Health Organization declared a pandemic on March 11, 2020, due to the SARS-CoV-2. This is supposed new challenge for students and faculties for the implementation of remote learning by universities worldwide. Platforms such as Zoom, Google Meet, and Microsoft Teams became the "new normal", and the primary venue for teaching and socializing.
+The World Health Organization declared a pandemic on 11^th^ March 2020, due to the SARS-CoV-2. This brought a new challenge for students and lecturers for implementing remote distance learning worldwide. Platforms such as Zoom, Google Meet, and Microsoft Teams became the "new normal", and the primary venue for teaching and socializing.
 
-A journal club (JC) is one of the well-established and popular methods of graduate and post-graduate education with about two hundred years of history (Topf et al., 2017). The JC was denominated in this way by Dr. James Paget in 1835. It was so named as the doctors of St. Bartholomew's Hospital, London, used to sit in a lounge and read the journals. But since their introduction by Sir William Osler in 1875 as regular meeting for a group of doctors and students to discuss publications where the JC have a long history in the medical sciences.
+A journal club (JC) is one of the well-established and popular methods of graduate and post-graduate education with about 200 years of history (Topf et al., 2017). The JC was denominated in this way by Dr. James Paget in 1835. It was so named as the doctors of St. Bartholomew's Hospital, London, used to sit in a lounge and read the journals. But since their introduction by Sir William Osler in 1875 as regular meeting for a group of doctors and students to discuss publications where the JC have a long history in the medical sciences.
 
-The original purpose of a JC was to help physicians stay up to date with current research and implement the research findings in clinical practice. It promotes group studying and contributes to developing a habit of continuously studying. But many aims can be achieved by participants during JC sessions as spreading scientific information and knowledge transfer, keeping up to date with the literature, and developing critical thinking or analytical skills in general. Additionally, the JC also acts as a motivating tool (Sanwatsarkar et al., 2022) and it makes the task of studying more manageable.
+The original purpose of a JC was to help physicians stay up to date with current research and implement the research findings in clinical practice. It promotes group studying and contributes to developing a habit of continuously studying. But many aims can be achieved by participants during JC sessions as spreading scientific information and knowledge transfer, keeping up to date with the literature, and developing critical thinking or analytical skills in general. Additionally, the JC also acts as a motivating tool [(Sanwatsarkar et al., 2022)](https://www.zotero.org/google-docs/?wi6LC5) and it makes the task of studying more manageable.
 
-This paper describes the establishment of Journal Clubs during two academic semesters for plant genetics lectures. The JC was carried out under remote learning at the Universidad Nacional Agraria La Molina, Peru. The main hypothesis is that the implementation of JC will improve the critical thinking skills and the capability of the student to relate the topic of the lectures in an environment with a lack of practical knowledge due to COVID restrictions.
+This paper describes the establishment of a JC during two academic semesters for plant genetics lectures as a remote learning approach at the Universidad Nacional Agraria La Molina, Peru. The main hypothesis was that the implementation of JC could improve the critical thinking skills and the capability of the student to relate the topic of the lectures in an environment with a lack of practical knowledge due to COVID restrictions.
 
 # Materials y Methods
 
 ## Sample and participants
 
-The methodology was applied to students from the fifth to sixth academic semesters of the plant genetics course at the Universidad Nacional Agraria La Molina. The information was collected during one year (i.e. two academic semesters). In the academic semester, 2021-2 and 2022-1 a total of 90 students were divided into 5 sections. Each academic semester lasted 16 weeks.
+This distance learning methodology was used with students from the fifth to sixth academic semesters of the plant genetics course at the Universidad Nacional Agraria La Molina, Peru. The JC was implemented during one year; i.e., two academic semesters, lasting each 16 weeks. In the academic semester, 2021-2 and 2022-1 a total of 90 students divided into 5 sections.
 
 ## Journal club and application
 
-The journal club methodology is divided into four stages. The training stage is given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) are repeated for each article with a duration per session of 60 minutes ([Figure  @fig:id.xmml0bkjl3j]:). Although the presentation language was announced to be Spanish, all the papers were in English (**Table S1**).
+The journal club methodology was divided into four stages. The training stage was given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) were repeated for each article with a duration of 60 minutes per session ([Figure  @fig:id.xmml0bkjl3j]:). Although the oral language was Spanish, all the papers were read in English (**Table S1**).
 
 
 
-![Scheme of the methodology of the Journal club. Training, the students learned different tools to read, write and  discuss scientific documents. Week 1, the article is presented and the students start reading it. Week 2, the students in groups start writing their essays. Week 3, the students discuss in random groups their opinions about the reading. Week 1 to 3 is repeated 4 times per academic semester.](img_0.png){#fig:id.xmml0bkjl3j}
+![Scheme of the methodology of the Journal Club. Training, the students learned different tools to read, write and discuss scientific documents. In week 1, the article was shared and the students began reading it. The students in groups start writing their essays in week 2, while in week 3, they discussed in random groups the assigned paper. Week 1 to 3 was repeated 4 times per academic semester.](img_0.png){#fig:id.xmml0bkjl3j}
 
-**Research tools:** Students learn various tools that will enable the appropriate use of software and applications for reading articles and writing essays. Among the tools were Zotero in the desktop version as the web connector, google documents, hypothes.is and the use of web translators (i.e. google Translate, DeepL, and DocTranslator). The induction stage has a duration of 120 minutes.
+**Research tools:** Students learn various tools that will enable the appropriate use of software and applications for reading articles and writing essays. Among these tools were Zotero in the desktop version as the web connector, Google Documents, Hypothesis and web translators (i.e., Google Translate, DeepL, and DocTranslator). The training stage took 120 minutes.
 
-**Reading articles:** Students are assigned into random groups of three to four. The reading is presented and they have 30 minutes to read and extract the essential information from the article. At the end of the reading time, the professor projects the article and asks questions about the topic of the reading or the hypothesis of the work. Then they read the document and mention the main points in the article.
+**Reading articles:** Students were assigned into random groups of three to four. Their journal article was presented and they had 30 minutes to read it and extract the essential information. At the end of the reading time, the professor shared the article through the virtual platform and asked questions about the topic of the reading or the hypothesis of the work. Thereafter they brought into the discussion the main points in the article.
 
-**Essay writing:** For the first 30 minutes the students in groups start the organization for the writing of the reading essay. In the remaining time, the professor gives indications on how to improve the writing or develops feedback on the mistakes made in the previous JC (**Supplementary Information 2**).
+**Essay writing:** For the first 30 minutes the students in groups began the organization for the writing of their reading essay. In the remaining time, the professor gave guidance on how to improve the writing or provided feedback on the mistakes made in the previous JC (**Supplementary Information 2**).
 
-**Reading discussion:** Students are separated into random groups to exchange ideas and opinions from the reading. At the end of that time, the discussion begins with the free participation of the students. In case there are no initial opinions, the professor will ask questions and question the reading to encourage discussion by presenting different ideas and opinions. The professor can optionally include an explanation with the use of slides to present a case or experience with the topic covered in the reading. 
+**Reading discussion:** Students were separated into random groups to exchange ideas and opinions from their reading assignment. At the end of that time, the discussion began with the free participation of the students. In case there were no initial opinions, the professor asked questions and probed their reading to encourage further discussion by presenting different ideas and opinions. The professor could optionally include an explanation with the use of slides to present a case or experience with the topic covered in the reading. 
 
 ## Results evaluation
 
@@ -83,7 +83,7 @@ The journal club methodology is divided into four stages. The training stage is 
 | 4                                                            | Should we read more articles?                                 |
 | 5                                                            | Was the number of articles appropriate?                       |
 | 7                                                            | Did you like the articles?                                    |
-| 8                                                            | Do you consider the journal club relevant to your education?  |
+| 8                                                            | Do you consider the Journal Club relevant to your education?  |
 | 9                                                            | Do you agree with its implementation?                         |
 
 
@@ -91,9 +91,13 @@ The journal club methodology is divided into four stages. The training stage is 
 
 : List of questions of the survey conducted to evaluate the level of satisfaction of the Journal Club of the students of the Universidad Nacional Agraria La Molina in the lecture on plant genetics during the period 2021-2 and 2022-1. {#tbl:id.j5db8cq6z9mt}
 
-**Essay evaluation:** The product of each JC was the submission of an essay and it was evaluated at the end of each cycle (i.e. week three). Grading was based on the use of an objective rubric (**Table S2**). The grading system was from 0 to 20. Where 20 is the maximum passing grade.
+**Essay evaluation:** The product of each JC was the submission of an essay and it was evaluated at the end of each cycle (i.e., week three). Grading was based on the use of an objective rubric (**Table S2**). The grading system was from 0 to 20, where 20 is the highest grade.
 
-**Data analysis**
+
+
+**Students’ surveys and data analysis**
+
+To determine the perception of the methodology, a survey was applied at the end of the semester to determine the use of learned tools and the application of the Journal Club. A survey was performed to determine the tools that the student used to read the articles and write the essays for the JC. The frequency of the names of the tools was recorded and counted to determine their use. 
 
 Data analysis was performed in the statistical software R version 4.2.1 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the number of journal clubs, the section, and the year of application of the methodology. The results were subjected to an analysis of variance to analyze the interaction between the factors. The SNK (Student-Newman-Keuls) test in the agricolae package ([Mendiburu, 2021](https://www.zotero.org/google-docs/?d0NZEZ)) was used to compare the means of the grades. The graphs were made with the inti package ([Lozano-Isla, 2022](https://www.zotero.org/google-docs/?gA9JQi)). Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the wordcloud package ([Fellows, 2018](https://www.zotero.org/google-docs/?dIS9C8)). 
 
@@ -103,49 +107,43 @@ Data analysis was performed in the statistical software R version 4.2.1 ([R Core
 
 ## Student perception
 
-To determine the perception of the methodology, a survey was applied at the end of the semester to determine the use of learned tools and the application of the journal club. 
-
-The 84.4% of students agree with the JC implementation and 83.3% consider it relevant for its education. Regarding the article read, 74.4% liked the articles chosen, whereas 84.4% consider the number of articles adequate for the duration of the course. Additionally, 60% considered not reducing the number of articles and 45% considered that should increase the number of articles. According to 87.8% of students consider timelapse for each JC is adequate. Regards to the difficulty of the articles, 14% considered them difficult to understand; whereas 72.2% of students considered the article medium-difficult ([Figure  @fig:id.pmcc7d4jkx1a]:).
+About 84.4% of the students agreed with the JC implementation and 83.3% considered it relevant to their education. Regarding the article read, 74.4% liked the articles chosen, whereas 84.4% indicated that the number of articles was adequate for the duration of the course. Additionally, 60% considered not reducing the number of articles, and 45% told to increase the number of articles. According to 87.8% of students, the timelapse for each JC was adequate. At least 14% of the student rated the chosen articles as difficult to understand, whereas 72.2% of students found their understanding medium to difficult ([Figure  @fig:id.pmcc7d4jkx1a]:).
 
 ![Student perception on the application of the journal club methodology during two academic semesters 2021-2022 in the plant genetics lecture at the Universidad Nacional Agraria La Molina (n = 96).](img_1.png){#fig:id.pmcc7d4jkx1a}
 
+## 
+
 ## Tools implemented
 
-A survey was performed to determine the tools that the student used to read the articles and write the essays for the JC. The frequency of the names of the tools was recorded and counted to determine their use.
+The frequency of the tools was divided into five groups represented by the colors: forest-green, blue, orange, purple, and gray ([Figure  @fig:id.6pfwogtac6re]:). The first group included by Google docs, Google Scholar, and Zotero with 11.9%, 10.7%, and 10.3%, respectively; while Sci-Hub and iLovePDF with 9.3% and 9.1%. respectively, were in the second group. The third group (5.6%) only included onlinedoctranslator. DeepL, Scimago Journal & Country Rank, and Foxit reader with 4.2%, 3.8%, and 3%, respectively, were in the fourth group. Tools such as Hypothesis, Articul8, and Grammarly represented less than 3% each.
 
-The frequency of the tools was divided into 5 groups represented by the colors: forest-green, blue, orange, purple, and gray ([Figure  @fig:id.6pfwogtac6re]:). The first group is represented by Google docs, Google Scholar, and Zotero with 11.9%, 10.7%, and 10.3% respectively. The second group was presented by Sci-Hub and iLovePDF with 9.3% and 9.1% respectively. The third group by onlinedoctranslator with 5.6%. The fourth group is DeepL, Scimago Journal & Country Rank, and Foxit reader with 4.2%, 3.8%, and 3.0% respectively. Tools such as Hypothesis, Articul8, and Grammarly represented less than 3% each.
-
-
-
-![Tools implemented in the training phase that students used for the development of the journal clubs and the development of their essays during two academic semesters 2021-2022 in the plant genetics lecture at the Universidad Nacional Agraria La Molina (n = 96).](img_2.png){#fig:id.6pfwogtac6re}
+![Tools implemented in the training phase of plant genetics that 96 students used for the development of the journal clubs and the development of their essays during two academic semesters (in years 2021 and 2022) at the Universidad Nacional Agraria La Molina.](img_2.png){#fig:id.6pfwogtac6re}
 
 ## Results assessment 
 
 The writing of an essay by groups was the product of each Journal Club. The result of each essay was evaluated and compared by section during the two academic semesters in the plant genetic lectures.
 
-Sections A and D presented an increase  in the score  in time for the evaluation of the essays. In the semester 2021-2 group A started with a score of 17.52 and at the final get a score of 18.4, whereas group D had 16.96 and 17.16 respectively for the same evaluations. In the semester 2022-1 group A started with 14.82 and concluded with a score of 17.93, whereas group D had a score of 16.47 and 18.64 respectively for the same evaluations. For both sections, A and D presented a continue improve in the score over time during the two academic semesters  ([Figure  @fig:id.y18qqmtszisb]:). Section D presented a reduction in the score in 2021-1 for JC two and four and JC three in 2022-1 ([Figure  @fig:id.y18qqmtszisb]:). Its reduction was associated with the fact of the type of the articles (i.e research articles, **Table S1**).   
+Sections A and D presented an increase in the score in time for the evaluation of the essays. In the 2021-2 semester group A started with a score of 17.5 and at the end got a score of 18.4, whereas group D had 17 and 17.2, respectively, for the same evaluations. In the 2022-1 semester group A started with 14.8 and ended with a score of 17.9, whereas group D had  16.5 and 18.6 gradings, respectively, for the same evaluations. For both sections, A and D showed a continued improvements in their grading over time during the two academic semesters ([Figure  @fig:id.y18qqmtszisb]:). Section D reduced their grading in 2021-1 for JC two and four and JC three in 2022-1 ([Figure  @fig:id.y18qqmtszisb]:). This reduction was associated with of the type of the articles (i.e., research articles, Table S1).
 
-Section B in the semester 2022-1 did not present an improvement in the score during the timelapse of journal clubs. The initial score for this group was 15.53 and finished with a score of 14.95 ([Figure  @fig:id.y18qqmtszisb]:).
+Section B in the 2022-1 semester did not show an improvement in the grading during the period of the JC. The initial grading for this group was 15.5 and ended with a grading of 15 ([Figure  @fig:id.y18qqmtszisb]:).
 
-![Grades of the essays of the journal club applied during two academic semesters 2021-2022 in the plant genetics lecture at the Universidad Nacional Agraria La Molina in five different sections (n = 96).](img_3.png){#fig:id.y18qqmtszisb}
+![Grades of the essays of the journal club during two academic semesters (in years 2021 and 2022) for remote learning of plant genetics at the Universidad Nacional Agraria La Molina in five different sections (n = 96).](img_3.png){#fig:id.y18qqmtszisb}
 
-# 
+# Discussion 
 
-```Unknown element type at this position: UNSUPPORTED```# Discussion 
+With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in the university worldwide [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?JNDh8q). The synchronous online lectures become the main environment from which students interacted, thereby bringing an alternative teaching-learning strategy because of the physical distance. In our article, we analyzed the implementation of a synchronous online journal club for plant genetics during two academic semesters at Universidad Nacional Agraria La Molina, Peru.
 
-With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in the university worldwide  [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?7Cl73K). The synchronous online lectures become the main environment from which students interacted taking importance to implement alternative teaching-learning strategies because of the physical distancing. In the present work, we analyze the implementation of a synchronous online journal club in plant genetics lectures during two-semester academics at Universidad Nacional Agraria La Molina, Peru. 
+For a long time, JC was used for teaching and knwoeldge sharing in medicine [(Aweid et al., 2022; Ozkara et al., 2022)](https://www.zotero.org/google-docs/?r9mwoa), and in post-graduate education [(Taverna et al., 2022)](https://www.zotero.org/google-docs/?GfRcyR). The JC appraoch was found to be educationally valuable, thus aiding in the development of critique skills, promoting research awareness, professional empowerment, generating a positive research culture and evidence-based practice [(Xiong et al., 2018)](https://www.zotero.org/google-docs/?3Vi89N). Our results showed that 83.3% of the participants found the JC sessions on plant genetics rich, productive and relevant to their formal education and they agreed with its implementation.
 
-For a long time, JC was used in medical areas [(Aweid et al., 2022; Ozkara et al., 2022)](https://www.zotero.org/google-docs/?QTo4J5) and in post-graduate education [(Taverna et al., 2022)](https://www.zotero.org/google-docs/?oLMYbU) where was found to be educationally valuable, aiding the development of critique skills, promoting research awareness, professional empowerment, generating a positive research culture and evidence-based practice [(Xiong et al., 2018)](https://www.zotero.org/google-docs/?9HbCa7). Our results showed that 83.3% of the participants found the JC sessions rich, productive and relevant to their formal education and they agree with its implementation.
+The JC implementation received excellent feedback from participants. Meetings lasted approximately 1 hour on average by week. An improvement in student interaction was achieved since the activities were in groups and open discussions with all the participants. Additionally, the students showed an improvement in their academic reading ability. Nevertheless, one of the main weaknesses of graduate students remains in critical thinking and scientific writing. This fact was evident by reduced grading when the students were exposed to reading and discussing research articles. However, in the two evaluated academic semesters, there was an increase in the grading in four out of the five groups with an improvement in writing skills. Similar results were found by other authors during the JC sessions to think more critically [(Taverna et al., 2022)](https://www.zotero.org/google-docs/?fKUFdz).
 
-The JC implementation received excellent feedback from participants. Meetings lasted approximately 1 hour on average by week. An improvement in student interaction was achieved since the activities were in groups and open discussions with all the participants. Additionally, the students showed an enhancement in academic reading abilities. Nevertheless, one of the main weaknesses of graduate students is critical thinking and scientific writing. This fact has been evidenced by the reduction in the scores when the students were exposed to reading and discussing research articles. However, in the two evaluated semesters, there was an increase in the score of four of the five groups with an improvement in writing skills. Similar results were found by other authors during the journal club sessions to think more critically [(Taverna et al., 2022)](https://www.zotero.org/google-docs/?Qg4xtQ).
+In agricultural sciences lectures, field practices are an important component in the education of the students. Since the closure of the university campus due to COVID-19 and the quick transition to online courses, students were isolated from their respective university with a negative impact on their education [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?FVdGj4). The JC is therefore a a relevant alternative, which issued as an online learning platform to promote the discussion and participation of students to strengthen the knowledge acquired in the theoretical lectures. Even under the post-COVID pandemic, the implementation of JC could be productive as some universities continue with a hybrid model for online teaching-learning because they provide a flexible and feasible platform for evidence-based learning [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?3zvTGC).
 
-In agricultural sciences lectures, field activities are an important component in the education of the students. Since the closure of university campuses due to COVID-19 and the quick transition to online courses, students were isolated from universities with a negative impact on their education [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?XdIYMA). The JC is presented as a relevant alternative used during online learning platforms to promote the discussion and participation of students to strengthen the knowledge acquired in the theoretical lectures. Even under the Post-COVID pandemic, the implementation of JC could be productive as most universities partial will continue with a hybrid model for online teaching-learning as they provide a flexible and feasible platform for evidence-based learning [(Ozkara et al., 2022)](https://www.zotero.org/google-docs/?omceoP). 
-
-An additional advantage of the implementation of a JC is the reduction of plagiarism as we avoid the repetition of the reading each semester and through the years and complement the readings with the lectures. In most cases, the students benefit from the state of the art used in the studied area of lectures and associate the theoretical knowledge acquired by the students. The present implementation during the plat genetic lecture could help to strengthen soft skills in the students such as critical thinking, teamwork, constant and independent learning, tolerance to different opinions, and digital skills. 
+An additional advantage of the implementation of a JC is the reduction of plagiarism as we avoid the repetition of the reading each semester and through the years and complement the lectures with the readings. In most cases, the students benefit from the state of the art used in the chosen area of lectures and associate the theoretical knowledge they have acquired. The implementation of a JC for plant genetics at Universidad Nacional Agraria La Molina, Peru may help to strengthen soft skills in the students such as critical thinking, teamwork, constant and independent learning, tolerance to different opinions, and digital skills.
 
 # Conclusion
 
-The implementation of a journal club in plant science lectures has presented an alternative that helps to reduce the negative impact of the pandemic on education and created a venue for academic discussions under the lack of field practice.  The participants perceive the journal club as relevant to their formal education and they agree with its implementation. Additionally, the JC allows students to complement the theoretical knowledge and the development of soft skills which is an indispensable prerequisite of lifelong learning and important for future employability.
+The implementation of a journal club in plant science lectures has presented an alternative that helps to reduce the negative impact of the COVID pandemic on higher education and created a venue for academic discussions under the lack of field practice. The participants perceive the JC as relevant to their formal education and they agree with its implementation. Additionally, the JC allows students to complement the theoretical knowledge and the development of soft skills, which are critical requirements for their lifelong learning and important for their future employability.
 
 
 
@@ -155,11 +153,7 @@ The implementation of a journal club in plant science lectures has presented an 
 
 
 
-
-
-# 
-
-```Unknown element type at this position: UNSUPPORTED```# References
+# References
 
 [Aweid, B., Haider, Z., Wehbe, M., & Hunter, A. (2022). Educational benefits of the online journal club: A systematic review. *Medical Teacher*, *44*(1), 57–62. https://doi.org/10.1080/0142159X.2021.1963424](https://www.zotero.org/google-docs/?h1YWHz)
 
@@ -172,6 +166,8 @@ The implementation of a journal club in plant science lectures has presented an 
 [Ozkara, B. B., Karabacak, M., & Alpaydin, D. D. (2022). Student-Run Online Journal Club Initiative During a Time of Crisis: Survey Study. *JMIR Medical Education*, *8*(1), e33612. https://doi.org/10.2196/33612](https://www.zotero.org/google-docs/?h1YWHz)
 
 [R Core Team. (2020). *R: A language and environment for statistical computing* [Manual]. https://www.R-project.org/](https://www.zotero.org/google-docs/?h1YWHz)
+
+[Sanwatsarkar, S., Palta, S., Parida, S., Kamat, C., & H, B. S. (2022). How to do a journal club, a seminar and a webinar? *Indian Journal of Anaesthesia*, *66*(01), 27–33. https://doi.org/10.4103/ija.ija\_1108\_21](https://www.zotero.org/google-docs/?h1YWHz)
 
 [Taverna, M., Bucher, J. N., Weniger, M., Gropp, R., Lee, S. M. L., Mayer, B., Werner, J., & Bazhin, A. V. (2022). Perception of journal club seminars by medical doctoral students: Results from five years of evaluation. *GMS Journal for Medical Education*, *39*(1), Doc4. https://doi.org/10.3205/zma001525](https://www.zotero.org/google-docs/?h1YWHz)
 
