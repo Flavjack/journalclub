@@ -115,6 +115,14 @@ plot %>%
          , plot = ., width = 30, height = 12, units = "cm", dpi = 300)
 ```
 
+```{r}
+lbl <- gs %>% 
+  range_read("survey") %>% 
+  select(Pregunta, Question) %>%
+  mutate(across(Pregunta, ~gsub("\\¿|\\?", "", .))) %>% 
+  deframe() 
+```
+
 # Googlesheets connect to surveys
 
 ```{r}
@@ -209,8 +217,10 @@ plot <- qst %>%
            , ylab = "Percentage ('%')"
            , glab = "Answers"
            , color = c("#669933", "#FFCC00", "#CC3333", "gray")
+           , gtext = c("Yes", "Few/Regular", "No", "NA")
            ) +
   geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
+  scale_x_discrete(labels = lbl) + 
   coord_flip() +
   geom_hline(yintercept = 75, color = "black", size = 0.5, linetype="dashed")
 
