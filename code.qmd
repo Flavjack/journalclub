@@ -1,13 +1,14 @@
 ---
-title: "Club de lectura como herramienta de enseñanza-aprendizaje en cursos de ciencias agrarias"
-author: "Flavio Lozano-Isla"
+title: "Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic"
+subtitle: "Comunicar"
+author: "Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz"
 format:
   html:
     toc: true
     toc-location: left
     number-sections: true
     self-contained: true
-    output-file: "index"
+    output-file: "ESM_3"
 editor_options: 
   chunk_output_type: console
 execute: 
@@ -68,17 +69,17 @@ s22.1 <- gs %>%
   drop_na(score) %>% 
   mutate(year = "2022-1", .before = user)
   
-
 scores <- list(s21.2, s22.1) %>% 
   bind_rows() %>% 
   mutate(across(where(is.character), trimws))
-
 
 scores$user %>%
   unique() %>% 
   length()
 
 str(scores)
+
+scores %>% web_table()
 
 model <- scores %>% 
   yupana_analysis(last_factor = "jc"
@@ -113,6 +114,8 @@ plot <- tab %>%
 plot %>% 
   ggsave(filename = "files/score.png"
          , plot = ., width = 30, height = 12, units = "cm", dpi = 300)
+
+include_graphics("files/score.png")
 ```
 
 ```{r}
@@ -229,6 +232,8 @@ plot %>%
          , plot = ., width = 20, height = 12, units = "cm", dpi = 300)
 
 qst %>% web_table()
+
+include_graphics("files/questions.png")
 ```
 
 # Word cloud for tools
@@ -261,5 +266,7 @@ wordcloud(words = text$tools
           , colors = rev(c("forestgreen", "blue", "orange", "purple", "gray"))
           )
 graphics.off()
+
+include_graphics("files/wordcloud.png")
 ```
 

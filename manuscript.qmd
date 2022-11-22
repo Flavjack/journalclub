@@ -9,6 +9,7 @@ format:
     toc: false
     section-numbers: true
     reference-doc: files/style.docx
+    output-file: "manuscript_2022-11-22"
 editor_options: 
   chunk_output_type: console
 execute:
