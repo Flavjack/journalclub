@@ -105,11 +105,9 @@ The journal club methodology was divided into four stages. The training stage wa
 
 **Students’ surveys and data analysis**
 
-To determine the perception of the methodology, a survey was applied at the end of the semester to determine the use of learned tools and the application of the Journal Club. A survey was performed to determine the tools that the student used to read the articles and write the essays for the JC. The frequency of the names of the tools was recorded and counted to determine their use. 
+Data analysis was performed in the statistical software R version 4.2.1 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the number of journal clubs, the section, and the year of application of the methodology. The results were subjected to an analysis of variance to analyze the interaction between the factors. The SNK (Student-Newman-Keuls) test in the *agricolae* package ([Mendiburu, 2021](https://www.zotero.org/google-docs/?d0NZEZ)) was used to compare the means of the grades. The graphs were made with the *inti* package ([Lozano-Isla, 2022](https://www.zotero.org/google-docs/?gA9JQi)). Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the *wordcloud* package ([Fellows, 2018](https://www.zotero.org/google-docs/?dIS9C8)). 
 
-Data analysis was performed in the statistical software R version 4.2.1 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the number of journal clubs, the section, and the year of application of the methodology. The results were subjected to an analysis of variance to analyze the interaction between the factors. The SNK (Student-Newman-Keuls) test in the agricolae package ([Mendiburu, 2021](https://www.zotero.org/google-docs/?d0NZEZ)) was used to compare the means of the grades. The graphs were made with the inti package ([Lozano-Isla, 2022](https://www.zotero.org/google-docs/?gA9JQi)). Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the wordcloud package ([Fellows, 2018](https://www.zotero.org/google-docs/?dIS9C8)). 
-
-The code and the reproducible data analysis were performed under Quarto an open-source scientific and technical publishing system [(Supplementary File 3, Allaire et al. 2022)](https://www.zotero.org/google-docs/?pakYS7).
+The code and the reproducible data analysis were performed under *Quarto* an open-source scientific and technical publishing system [(Supplementary File 3, Allaire et al. 2022)](https://www.zotero.org/google-docs/?pakYS7).
 
 # 
 
@@ -121,13 +119,15 @@ The code and the reproducible data analysis were performed under Quarto an open-
 
 ## Student perception
 
+To determine the perception of the methodology, a survey was applied at the end of the semester to determine the use of learned tools and the application of the Journal Club. 
+
 About 84.4% of the students agreed with the JC implementation and 83.3% considered it relevant to their education. Regarding the article read, 74.4% liked the articles chosen, whereas 84.4% indicated that the number of articles was adequate for the duration of the course. Additionally, 60% considered not reducing the number of articles, and 45% told to increase the number of articles. According to 87.8% of students, the timelapse for each JC was adequate. At least 14% of the student rated the chosen articles as difficult to understand, whereas 72.2% of students found their understanding medium to difficult ([Figure  @fig:id.pmcc7d4jkx1a]:).
 
 ![Student perception on the application of the journal club methodology during two academic semesters 2021-2022 in the plant genetics lecture at the Universidad Nacional Agraria La Molina (n = 96).](img_1.png){#fig:id.pmcc7d4jkx1a}
 
-## 
-
 ## Tools implemented
+
+A survey was performed to determine the tools that the student used to read the articles and write the essays for the JC. The frequency of the names of the tools was recorded and counted to determine their use. 
 
 The frequency of the tools was divided into five groups represented by the colors: forest-green, blue, orange, purple, and gray ([Figure  @fig:id.6pfwogtac6re]:). The first group included by Google docs, Google Scholar, and Zotero with 11.9%, 10.7%, and 10.3%, respectively; while Sci-Hub and iLovePDF with 9.3% and 9.1%. respectively, were in the second group. The third group (5.6%) only included onlinedoctranslator. DeepL, Scimago Journal & Country Rank, and Foxit reader with 4.2%, 3.8%, and 3%, respectively, were in the fourth group. Tools such as Hypothesis, Articul8, and Grammarly represented less than 3% each.
 
@@ -169,7 +169,7 @@ The code and the reproducible data analysis are presented in Supplementary File 
 
 **Acknowledgments**
 
-This work was funded by the Universidad Nacional Agraria La Molina through the Centro de Innovación Educativa and the Unidad de Investigacion de la Facultad de Agronomia during teacher training. To E. Rios and V. Landa for their motivation to improve the courses. To R. Ortiz for suggestions to improve the manuscript. To the students who voluntarily participated in the elaboration of the surveys.
+This work was funded by the Universidad Nacional Agraria La Molina through the Centro de Innovación Educativa and the Unidad de Investigacion de la Facultad de Agronomia. To E. Rios and V. Landa for their motivation to improve the lectures that resulted in the present manuscript. To R. Ortiz for suggestions to improve the manuscript. To the students who voluntarily participated in the elaboration of the surveys.
 
 **Conflict of interest**
 
@@ -218,7 +218,7 @@ Flavio Lozano-Isla: Conceptualization, Data curation, Formal analysis, Investiga
 
 
 
-| **Journal**                                                                                                          | Comunicar                                                                                                             |
+| **Journal**                                                                                                          | Research in Science Education                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | **Title**                                                                                                            | Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic  |
 | **Authors**                                                                                                          | Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz                                                        |

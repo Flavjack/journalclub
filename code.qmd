@@ -1,6 +1,6 @@
 ---
 title: "Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic"
-subtitle: "Comunicar"
+subtitle: "Research in Science Education"
 author: "Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz"
 format:
   html:
@@ -26,20 +26,191 @@ readLines(con = 'https://inkaverse.com/setup.r') |>
   writeLines(setup)
 source(setup)
 
-# session_info()
+session_info()
 
 #> Rticle
 # browseURL("https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#")
 ```
 
-# Googlesheets connect to scores
+# JC pipeline
+
+```{r}
+library(magick)
+
+pipeline <- image_read_pdf("files/pipeline.pdf") %>% 
+  image_crop("1350x1500")
+
+pipeline %>% 
+  image_write(format = "pdf", "files/Fig1.pdf")
+  
+include_graphics("files/Fig1.pdf")
+```
+
+# Import data
 
 ```{r}
 gsh <- "https://docs.google.com/spreadsheets/d/1yh44GeIx0mLttMmgFSuQ-aNGLRO9yewaq8MWAclnznE/edit#gid=111798384"
 # browseURL(gsh)
-gs <- as_sheets_id(gsh)
+gs_score <- as_sheets_id(gsh)
 
-s21.2 <- gs %>% 
+gsh <- "https://docs.google.com/spreadsheets/d/1G2hvWcnEMCrrvR_J0_j2IBpAUELx1dAhTaOK8eObBK8/edit#gid=1412841139"
+# browseURL(gsh)
+gs_survey <- as_sheets_id(gsh)
+```
+
+# Googlesheets connect to surveys
+
+```{r}
+e21.2 <- gs_survey %>% 
+  range_read("S21-2") %>% 
+  select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  rename_with(~gsub("Sobre los artículos"
+                   , "Sobre el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Herramientas que aprendí en el curso"
+                   , "Herramientas que aprendí durante el curso"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
+                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  mutate(year = "2021-2", .before = Curso)
+
+
+e22.1 <- gs_survey %>% 
+  range_read("S22-1") %>% 
+  select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  rename_with(~gsub("Sobre los artículos"
+                   , "Sobre el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Herramientas que aprendí en el curso"
+                   , "Herramientas que aprendí durante el curso"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
+                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+    mutate(year = "2022-1", .before = Curso)
+
+fb <- list(e21.2, e22.1) %>% 
+  bind_rows() %>% 
+  select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
+  na_if("Aprendí a usar") %>% 
+  na_if("Aprendí a usar, Relevante para mi formación") %>% 
+  relocate(contains("Opinión"), .after = last_col()) %>% 
+  dplyr::filter(grepl(pattern = "fito", x = Curso, ignore.case = T))
+
+names(fb)
+
+fb %>% web_table()
+```
+
+> Number of surves is 90 for one year (two semesters)
+
+# Summary by question
+
+```{r}
+lbl <- gs_score %>% 
+  range_read("survey") %>% 
+  select(Pregunta, Question) %>%
+  mutate(across(Pregunta, ~gsub("\\¿|\\?", "", .))) %>% 
+  deframe() 
+```
+
+```{r}
+qst <- fb %>% 
+  select(matches("Sobre")) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname) %>% 
+  mutate(name = gsub(".*\\[(.*)\\]", "\\1", name)) %>% 
+  group_by(name, value) %>% 
+  summarise(n = n()) %>% 
+  mutate(per = n/90*100) %>% 
+  ungroup() %>% 
+  mutate(nval = case_when(
+    value %in% "Si" ~ 1
+    , value %in% "Poco/Regular" ~ 2
+    , value %in% "No" ~ 3
+    , TRUE ~ 4
+  )) %>% 
+  mutate(nqs = case_when(
+    name %in% "Estas de acuerdo con su implementación" ~ 1
+    , name %in% "Consideras relevantes para tu formación" ~ 2
+    , name %in% "Te gustarón los artículos" ~ 3
+    , name %in% "El número de artículos fue adecuado" ~ 4
+    , name %in% "Deberiamos leer más artículos" ~ 5
+    , name %in% "Deberiamos leer menos artículos" ~ 6
+    , name %in% "El tiempo para cada JC fue adecuado" ~ 7
+    , name %in% "Los artículos eran difíciles de entender" ~ 8
+    )) %>% 
+  arrange(nqs, nval) %>% 
+  mutate(value = factor(value, levels = unique(value))) %>% 
+  mutate(name = factor(name, levels = unique(name)))
+
+qst %>% str()
+
+qst %>% web_table()
+
+plot <- qst %>% 
+  plot_smr(x = "name"
+           , y = "per"
+           , group = "value"
+           , ylimits = c(0, 101, 10)
+           , xlab = ""
+           , ylab = "Percentage ('%')"
+           , glab = "Answers"
+           , color = c("#669933", "#FFCC00", "#CC3333", "gray")
+           , gtext = c("Yes", "Few/Regular", "No", "NA")
+           ) +
+  geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
+  scale_x_discrete(labels = lbl) + 
+  coord_flip() +
+  geom_hline(yintercept = 75, color = "black", size = 0.5, linetype="dashed")
+
+plot %>% 
+  ggsave2(filename = c("files/Fig2.pdf")
+         , plot = ., width = 20, height = 12, units = "cm")
+
+include_graphics("files/Fig2.pdf")
+```
+
+# Tools use Wordcloud
+
+```{r}
+library(wordcloud)
+
+recode <- c("Google académico" = "Google Scholar"
+            , "Tablas dinámicas" = "Pivot table")
+
+text <- fb %>% 
+  rename(tools = "Herramientas que aprendí durante el curso") %>% 
+  select(tools) %>% 
+  separate_rows(tools, sep = ",") %>% 
+  mutate(across(everything(), ~ trimws(.))) %>% 
+  drop_na() %>% 
+  group_by(tools) %>% 
+  summarise(n = n()) %>% 
+  arrange(desc(n)) %>% 
+  mutate(freq = n/sum(n)*100) %>% 
+  mutate(tools = recode(tools, !!!recode))
+
+set.seed(2)
+
+pdf("files/Fig3.pdf", width = 20/2.5, height = 20/2.5)
+wordcloud(words = text$tools
+          , freq = text$freq
+          , scale = c(5,0.5)
+          , min.freq = 1
+          , random.order = FALSE 
+          , colors = rev(c("forestgreen", "blue", "orange", "purple", "gray"))
+          )
+graphics.off()
+
+include_graphics("files/Fig3.pdf")
+```
+
+# Googlesheets connect to scores
+
+```{r}
+s21.2 <- gs_score %>% 
   range_read("s21.2") %>% 
   select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
@@ -54,7 +225,7 @@ s21.2 <- gs %>%
   drop_na(score) %>% 
   mutate(year = "2021-2", .before = user)
 
-s22.1 <- gs %>% 
+s22.1 <- gs_score %>% 
   range_read("s22.1") %>% 
   select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
@@ -112,161 +283,27 @@ plot <- tab %>%
   facet_wrap(. ~ year, ncol = 2)
 
 plot %>% 
-  ggsave(filename = "files/score.png"
-         , plot = ., width = 30, height = 12, units = "cm", dpi = 300)
+  ggsave2(filename = "files/Fig4.pdf"
+         , plot = ., width = 30, height = 12, units = "cm")
 
-include_graphics("files/score.png")
+include_graphics("files/Fig4.pdf")
 ```
 
-```{r}
-lbl <- gs %>% 
-  range_read("survey") %>% 
-  select(Pregunta, Question) %>%
-  mutate(across(Pregunta, ~gsub("\\¿|\\?", "", .))) %>% 
-  deframe() 
-```
-
-# Googlesheets connect to surveys
+# Image pdf to tiff
 
 ```{r}
-gsh <- "https://docs.google.com/spreadsheets/d/1G2hvWcnEMCrrvR_J0_j2IBpAUELx1dAhTaOK8eObBK8/edit#gid=1412841139"
-# browseURL(gsh)
-gs <- as_sheets_id(gsh)
+library(tiff)
 
-e21.2 <- gs %>% 
-  range_read("S21-2") %>% 
-  select("Curso",  matches("Herramientas|artículos|club")) %>% 
-  rename_with(~gsub("Sobre los artículos"
-                   , "Sobre el club de lectura (Journal Club)"
-                   , x = .x)) %>% 
-  rename_with(~gsub("Herramientas que aprendí en el curso"
-                   , "Herramientas que aprendí durante el curso"
-                   , x = .x)) %>% 
-  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
-                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
-                   , x = .x)) %>% 
-  mutate(year = "2021-2", .before = Curso)
+pdf2tiff <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
 
-
-e22.1 <- gs %>% 
-  range_read("S22-1") %>% 
-  select("Curso",  matches("Herramientas|artículos|club")) %>% 
-  rename_with(~gsub("Sobre los artículos"
-                   , "Sobre el club de lectura (Journal Club)"
-                   , x = .x)) %>% 
-  rename_with(~gsub("Herramientas que aprendí en el curso"
-                   , "Herramientas que aprendí durante el curso"
-                   , x = .x)) %>% 
-  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
-                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
-                   , x = .x)) %>% 
-    mutate(year = "2022-1", .before = Curso)
-
-fb <- list(e21.2, e22.1) %>% 
-  bind_rows() %>% 
-  select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
-  na_if("Aprendí a usar") %>% 
-  na_if("Aprendí a usar, Relevante para mi formación") %>% 
-  relocate(contains("Opinión"), .after = last_col()) %>% 
-  dplyr::filter(grepl(pattern = "fito", x = Curso, ignore.case = T))
-
-names(fb)
-
-fb %>% web_table()
-```
-
-> Number of surves is 90 for one year (two semesters)
-
-# Summary by question
-
-```{r}
-qst <- fb %>% 
-  select(matches("Sobre")) %>% 
-  rownames_to_column() %>% 
-  pivot_longer(!rowname) %>% 
-  mutate(name = gsub(".*\\[(.*)\\]", "\\1", name)) %>% 
-  group_by(name, value) %>% 
-  summarise(n = n()) %>% 
-  mutate(per = n/90*100) %>% 
-  ungroup() %>% 
-  mutate(nval = case_when(
-    value %in% "Si" ~ 1
-    , value %in% "Poco/Regular" ~ 2
-    , value %in% "No" ~ 3
-    , TRUE ~ 4
-  )) %>% 
-  mutate(nqs = case_when(
-    name %in% "Estas de acuerdo con su implementación" ~ 1
-    , name %in% "Consideras relevantes para tu formación" ~ 2
-    , name %in% "Te gustarón los artículos" ~ 3
-    , name %in% "El número de artículos fue adecuado" ~ 4
-    , name %in% "Deberiamos leer más artículos" ~ 5
-    , name %in% "Deberiamos leer menos artículos" ~ 6
-    , name %in% "El tiempo para cada JC fue adecuado" ~ 7
-    , name %in% "Los artículos eran difíciles de entender" ~ 8
-    )) %>% 
-  arrange(nqs, nval) %>% 
-  mutate(value = factor(value, levels = unique(value))) %>% 
-  mutate(name = factor(name, levels = unique(name)))
-
-qst %>% str()
+imgs <- 1:length(pdf2tiff) %>% map(\(x) {
   
-plot <- qst %>% 
-  plot_smr(x = "name"
-           , y = "per"
-           , group = "value"
-           , ylimits = c(0, 101, 10)
-           , xlab = ""
-           , ylab = "Percentage ('%')"
-           , glab = "Answers"
-           , color = c("#669933", "#FFCC00", "#CC3333", "gray")
-           , gtext = c("Yes", "Few/Regular", "No", "NA")
-           ) +
-  geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
-  scale_x_discrete(labels = lbl) + 
-  coord_flip() +
-  geom_hline(yintercept = 75, color = "black", size = 0.5, linetype="dashed")
-
-plot %>% 
-  ggsave(filename = "files/questions.png"
-         , plot = ., width = 20, height = 12, units = "cm", dpi = 300)
-
-qst %>% web_table()
-
-include_graphics("files/questions.png")
-```
-
-# Word cloud for tools
-
-```{r}
-library(wordcloud)
-
-recode <- c("Google académico" = "Google Scholar"
-            , "Tablas dinámicas" = "Pivot table")
-
-text <- fb %>% 
-  rename(tools = "Herramientas que aprendí durante el curso") %>% 
-  select(tools) %>% 
-  separate_rows(tools, sep = ",") %>% 
-  mutate(across(everything(), ~ trimws(.))) %>% 
-  drop_na() %>% 
-  group_by(tools) %>% 
-  summarise(n = n()) %>% 
-  arrange(desc(n)) %>% 
-  mutate(freq = n/sum(n)*100) %>% 
-  mutate(tools = recode(tools, !!!recode))
-
-set.seed(2)
-png(filename = "files/wordcloud.png", width = 20, height = 20, units = "cm", res = 300)
-wordcloud(words = text$tools
-          , freq = text$freq
-          , scale = c(5,0.5)
-          , min.freq = 1
-          , random.order = FALSE 
-          , colors = rev(c("forestgreen", "blue", "orange", "purple", "gray"))
-          )
-graphics.off()
-
-include_graphics("files/wordcloud.png")
+  filename <- pdf2tiff[x] %>% gsub(".pdf", "\\1.tiff", .) 
+  
+  pdf2tiff[x] %>% 
+    image_read_pdf() %>% 
+    image_write(format = "tiff", filename)
+  
+})
 ```
 
