@@ -1,7 +1,7 @@
 ---
 title: "Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic"
 subtitle: "Research in Science Education"
-author: "Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz"
+# author: "Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz"
 format:
   html:
     toc: true
