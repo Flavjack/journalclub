@@ -1,7 +1,6 @@
 ---
 title: "Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic"
 subtitle: "Research in Science Education"
-# author: "Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Andres Casas-Diaz"
 format:
   html:
     toc: true
@@ -13,6 +12,7 @@ editor_options:
   chunk_output_type: console
 execute: 
   warning: false
+  echo: true
 ---
 
 # Setup
@@ -20,16 +20,11 @@ execute:
 ```{r}
 #| label:  setup
 
-setup <- tempfile(fileext = ".r")
-readLines(con = 'https://inkaverse.com/setup.r') |> 
-  gsub("echo = FALSE", "echo = TRUE", x = _) |>
-  writeLines(setup)
-source(setup)
+library(emmeans) 
+library(multcomp)
+source('https://inkaverse.com/setup.r')
 
 session_info()
-
-#> Rticle
-# browseURL("https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#")
 ```
 
 # JC pipeline
@@ -49,13 +44,13 @@ include_graphics("files/Fig1.pdf")
 # Import data
 
 ```{r}
-gsh <- "https://docs.google.com/spreadsheets/d/1yh44GeIx0mLttMmgFSuQ-aNGLRO9yewaq8MWAclnznE/edit#gid=111798384"
+gsh1 <- "https://docs.google.com/spreadsheets/d/1yh44GeIx0mLttMmgFSuQ-aNGLRO9yewaq8MWAclnznE/edit#gid=111798384"
 # browseURL(gsh)
-gs_score <- as_sheets_id(gsh)
+gs_score <- as_sheets_id(gsh1)
 
-gsh <- "https://docs.google.com/spreadsheets/d/1G2hvWcnEMCrrvR_J0_j2IBpAUELx1dAhTaOK8eObBK8/edit#gid=1412841139"
+gsh2 <- "https://docs.google.com/spreadsheets/d/1G2hvWcnEMCrrvR_J0_j2IBpAUELx1dAhTaOK8eObBK8/edit#gid=1412841139"
 # browseURL(gsh)
-gs_survey <- as_sheets_id(gsh)
+gs_survey <- as_sheets_id(gsh2)
 ```
 
 # Googlesheets connect to surveys
@@ -100,10 +95,9 @@ fb <- list(e21.2, e22.1) %>%
 
 names(fb)
 
-fb %>% web_table()
+fb %>%
+  web_table()
 ```
-
-> Number of surves is 90 for one year (two semesters)
 
 # Summary by question
 
@@ -163,7 +157,7 @@ plot <- qst %>%
   geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
   scale_x_discrete(labels = lbl) + 
   coord_flip() +
-  geom_hline(yintercept = 75, color = "black", size = 0.5, linetype="dashed")
+  geom_hline(yintercept = 75, color = "black", linewidth = 0.5, linetype="dashed")
 
 plot %>% 
   ggsave2(filename = c("files/Fig2.pdf")
@@ -253,34 +247,30 @@ str(scores)
 scores %>% web_table()
 
 model <- scores %>% 
-  yupana_analysis(last_factor = "jc"
-                  , response = "score"
-                  , model_factors = "jc*section*year"
-                  , comparison = c("jc", "section", "year")
-                  )
+  lm(score ~ jc*section*year, data = .)
 
-model$anova %>% anova()
+anova(model)
 
-model$stats %>% web_table()
+mc <- emmeans(model, ~ jc | section | year) %>% 
+  cld(Letters = letters, reversed = T)
 
-tab <- model$meancomp %>% 
-  arrange(year, section)
+mc
 
-tab %>% web_table()
-
-plot <- tab %>% 
+plot <- mc %>% 
   plot_smr(type = "line"
            , x = "jc"
-           , y = "score"
+           , y = "emmean"
            , group = "section"
            , ylimits = c(14, 20, 1)
            , ylab = "Score (0-20)"
            , xlab = "Journal Club"
            , glab = "Section"
-           , sig = "sig"
+           , sig = ".group"
            # , error = "ste"
            ) +
   facet_wrap(. ~ year, ncol = 2)
+
+plot
 
 plot %>% 
   ggsave2(filename = "files/Fig4.pdf"
@@ -289,7 +279,7 @@ plot %>%
 include_graphics("files/Fig4.pdf")
 ```
 
-# Image pdf to tiff
+# Image pdf to png
 
 ```{r}
 library(tiff)
@@ -298,11 +288,11 @@ pdf2tiff <- list.files("files/", pattern = "Fig.*pdf", full.names = T)
 
 imgs <- 1:length(pdf2tiff) %>% map(\(x) {
   
-  filename <- pdf2tiff[x] %>% gsub(".pdf", "\\1.tiff", .) 
+  filename <- pdf2tiff[x] %>% gsub(".pdf", "\\1.png", .) 
   
   pdf2tiff[x] %>% 
     image_read_pdf() %>% 
-    image_write(format = "tiff", filename)
+    image_write(format = "png", filename)
   
 })
 ```
