@@ -32,7 +32,7 @@ Authors declares no conflicts of interest.
 
 ```Unknown element type at this position: UNSUPPORTED```# Abstract
 
-In crop science areas there are lectures where concepts are abstract. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. There are different pedagogical strategies to increase the capabilities and interests of students. This paper presents the implementation of a journal club (JC) with the collaborative-metacognitive use of the science literature teaching approach (CMSLTA) as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Lerning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read four articles per academic semester and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and an improvement in essay writing.
+In crop science areas there are lectures where concepts are abstract. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. There are different pedagogical strategies to increase the capabilities and interests of students. This paper presents the implementation of a journal club (JC) with the collaborative-metacognitive use of the scientific literature teaching approach (CMSLTA) as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Lerning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read four articles per academic semester and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and an improvement in essay writing.
 
 **Keywords:** CMSLTA, crop sciences, research tools, sci-hub, seven Cs, Zotero
 
@@ -76,7 +76,7 @@ In the context of the present implementation of JC, students work together to re
 
 ## Seven Cs
 
-The concept of the Seven Cs refers to a framework of twenty-first-century skills and is composed of seven key elements: communication, collaboration, creativity, critical thinking, cross-cultural understanding, computerized/information and communication technologies, and career/lifelong learning [(Daloos and Paderna 2023)](https://www.zotero.org/google-docs/?zdVyo0). These elements are important for any type of communication, whether written or oral and are especially useful in professional and academic environments. By following the principles of the Seven Cs, the quality of communication can be improved and the comprehension and effectiveness of the messages transmitted can be increased. 
+The concept of the Seven Cs refers to a framework of twenty-first-century skills and is composed of seven key elements: communication, collaboration, creativity, critical thinking, cross-cultural understanding, computerized/information and communication technologies, and career/lifelong learning [(Daloos and Paderna 2023)](https://www.zotero.org/google-docs/?zdVyo0). These elements are important for any type of communication, whether written or oral, and are especially useful in professional and academic environments. By following the principles of the Seven Cs, the quality of communication can be improved and the comprehension and effectiveness of the messages transmitted can be increased. 
 
 The implementation of a journal club could reinforce the following concepts:
 
@@ -104,7 +104,7 @@ The Journal Club (JC) was implemented in the plant genetics lecture of the Agron
 
 ## Teaching Approach
 
-The JC methodology was divided into four stages. The training stage was given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) were repeated for each article with a duration of 60 minutes per session (Figure 1). Although the oral language was Spanish, all the papers were read in English ([Table  @tbl:id.85ly0lr9xnr1]:). All lectures were conducted virtually through the zoom platform. 
+The JC methodology was divided into four stages. The training stage was given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) were repeated for each article with a duration of 60 minutes per session (Figure 1). Although the oral language was Spanish, all the papers were read in English ([Table  @tbl:id.85ly0lr9xnr1]:). All lectures were conducted virtually through the Zoom platform. 
 
 
 
@@ -192,7 +192,7 @@ About 84.4% of the students agreed with the JC implementation and 83.3% consider
 
 The frequency with which each tool was used by the students was evaluated to determine the relevance of the training in the use of research tools during JC implementation
 
-The frequency of the tools was divided into five groups represented by the colors: forest-green, blue, orange, purple, and gray ([Figure  @fig:id.6pfwogtac6re]:). The first group included Google docs, Google Scholar, and Zotero with 11.9%, 10.7%, and 10.3%, respectively; while Sci-Hub and iLovePDF were in the second group with 9.3% and 9.1% respectively. The third group only included onlinedoctranslator with 5.6%. DeepL, Scimago Journal & Country Rank, and Foxit reader were in the fourth group with 4.2%, 3.8%, and 3%, respectively. Tools such as Hypothesis, Articul8, and Grammarly represented less than 3% each.
+The frequency of the tools was divided into five groups represented by the colors: forest-green, blue, orange, purple, and gray ([Figure  @fig:id.6pfwogtac6re]:). The first group included Google Docs, Google Scholar, and Zotero with 11.9%, 10.7%, and 10.3%, respectively; while Sci-Hub and iLovePDF were in the second group with 9.3% and 9.1% respectively. The third group only included onlinedoctranslator with 5.6%. DeepL, Scimago Journal & Country Rank, and Foxit Reader were in the fourth group with 4.2%, 3.8%, and 3%, respectively. Tools such as Hypothesis, Articul8, and Grammarly represented less than 3% each.
 
 ![Research tools learned and used by students during the implementation of the journal club in the plant genetics lecture during the period  2021 and 2022 at the Universidad Nacional Agraria La Molina.  Results based on the frequency with which each tool was mentioned in 90 students surveyed.](img_2.png){#fig:id.6pfwogtac6re}
 
@@ -210,7 +210,7 @@ Section B in the 2022-1 semester did not show an improvement in the grading duri
 
 ```Unknown element type at this position: UNSUPPORTED```# Discussion 
 
-With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in the university worldwide [(Barton 2020; Daniel 2020; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?JNDh8q). The synchronous and asynchronous e-Leraning become the main environment from which students interacted. Active learning classroom strategies  need to be generated to engage the interest and motivation of students [(Garcia-Vedrenne et al. 2020)](https://www.zotero.org/google-docs/?iIpTun). We analyzed the implementation of a synchronous e-Lerniang journal club at plant genetics lectures. The results show that there is a positive perception of students towards the implementation of a journal club based on the application of a collaborative-metacognitive use of science literature teaching approach (CMSLTA). 
+With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in the university worldwide [(Barton 2020; Daniel 2020; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?JNDh8q). Synchronous and asynchronous e-Learning became the main environment in which students interacted. Active learning classroom strategies  need to be generated to engage the interest and motivation of students [(Garcia-Vedrenne et al. 2020)](https://www.zotero.org/google-docs/?iIpTun). We analyzed the implementation of a synchronous e-Lerniang journal club at plant genetics lectures. The results show that there is a positive perception of students towards the implementation of a journal club based on the application of a collaborative-metacognitive use of science literature teaching approach (CMSLTA). 
 
 For a long time, JC was used for teaching and knowledge sharing in medicine [(Aweid et al. 2022; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?r9mwoa), and in post-graduate education [(Taverna et al. 2022)](https://www.zotero.org/google-docs/?GfRcyR). The JC approach was found to be educationally valuable, thus aiding in the development of critique skills, promoting research awareness, and professional empowerment, and generating a positive research culture and evidence-based practice [(Xiong et al. 2018)](https://www.zotero.org/google-docs/?3Vi89N). The JC implementation received excellent feedback from participants. Our results reveal that 83% of the participants who participated in the implementation of the JC in the plant genetics lecture found it productive, and relevant to their formal education and they agreed with its implementation. 
 
@@ -316,6 +316,12 @@ The data and the reproducible analysis are available in Supplementary File 3.
 
 
 
+
+
+
+
+
+
 #| END
 
 ```Unknown element type at this position: UNSUPPORTED```# Supplementary information
@@ -325,9 +331,9 @@ The data and the reproducible analysis are available in Supplementary File 3.
 
 
 
-| **Journal**                                                                                                          | Research in Science Education                                                                                         |
-|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | **Title**                                                                                                            | Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic  |
+|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Journal**                                                                                                          | [Learning Environments Research](https://www.springer.com/journal/10984)                                              |
 
 
 
@@ -366,17 +372,21 @@ We think that the changes we have made can effectively address the suggested iss
 
 
 
+**Response to reviewer's comments**
 
+**Review #1:**
 
+Responses to the challenges of teaching during the pandemic is an area of interest to the community of researchers of teaching and learning of science. As such, your work will likely be of interest to the RISE readership, however, the study as reported is insufficiently grounded in contemporary science education research. We would also expect to see robust theoretical positioning for the work. That said, your work has potential for publication in RISE. However, before it can be considered further, there are several concerns: 1) the work must be robustly positioned in contemporary science education research; 2) theoretical perspectives must be developed thoroughly to underpin the work; 3) key constructs of relevance should be developed through a current and thorough literature review; and, 4) papers must rise above the level of the local context (for example, beyond simply ‘what to teach’ or an evaluation of a locally-developed innovation) as well as position the study.
 
+**Reply review #1**
 
+Thanks for the suggestions to improve the manuscript. To address the four concerns issues in the manuscript, We implemented several changes: 
 
+Firstly, we developed a theoretical framework to provide a comprehensive understanding of the topics covered in the manuscript (Lines 71-134), which included e-Learning, Journal Club, CMSLTA, Seven Cs, and pedagogy (Issues 1 and 3). 
 
+Next, we focused on the pedagogical perspective of the journal club and its application within the framework of the Collaborative-metacognitive use of science literature teaching approach (CMSLTA) and the seven Cs (Issues 2 and 4), as these skills are essential for students in contemporary education. These changes were included in Lines 135 to 151.
 
-
-
-
-
+We also restructured the manuscript to improve its organization and readability in the methodology (Lines 151 to 164), and we included the study's limitations (Lines 275 to 279).
 
 ---
 

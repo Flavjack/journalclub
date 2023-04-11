@@ -1,6 +1,5 @@
 ---
 title: "Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic"
-subtitle: "Research in Science Education"
 format:
   html:
     toc: true
@@ -88,8 +87,8 @@ e22.1 <- gs_survey %>%
 fb <- list(e21.2, e22.1) %>% 
   bind_rows() %>% 
   select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
-  na_if("Aprendí a usar") %>% 
-  na_if("Aprendí a usar, Relevante para mi formación") %>% 
+  mutate(across(where(is.character), ~na_if(., "Aprendí a usar"))) %>% 
+  mutate(across(where(is.character), ~na_if(., "Aprendí a usar, Relevante para mi formación"))) %>% 
   relocate(contains("Opinión"), .after = last_col()) %>% 
   dplyr::filter(grepl(pattern = "fito", x = Curso, ignore.case = T))
 
@@ -212,7 +211,7 @@ s21.2 <- gs_score %>%
                    , x = .x)) %>% 
   pivot_longer(!user, names_to = "jc", values_to = "score") %>% 
   mutate(across(everything(), as.character)) %>% 
-  na_if("-") %>% 
+  mutate(across(where(is.character), ~na_if(., "-"))) %>% 
   mutate(section = gsub(".*\\_(.*).*\\(Real\\)", "\\1", jc), .after = user) %>% 
   mutate(across(c(user, jc), ~gsub("\\D", "", .x))) %>% 
   mutate(across(score, as.numeric)) %>% 
@@ -227,7 +226,7 @@ s22.1 <- gs_score %>%
                    , x = .x)) %>% 
   pivot_longer(!user, names_to = "jc", values_to = "score") %>% 
   mutate(across(everything(), as.character)) %>% 
-  na_if("-") %>% 
+  mutate(across(where(is.character), ~na_if(., "-"))) %>% 
   mutate(section = gsub(".*\\((.*)\\).*\\(Real\\)", "\\1", jc), .after = user) %>% 
   mutate(across(c(user, jc), ~gsub("\\D", "", .x))) %>% 
   mutate(across(score, as.numeric)) %>% 
