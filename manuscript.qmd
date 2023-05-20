@@ -8,16 +8,16 @@ format:
   docx:
     toc: false
     section-numbers: true
-    reference-doc: files/style.docx
+    reference-doc: JoSTE/style.docx
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
 execute:
   echo: false
   warning: false
-crossref:
-  fig-title: Fig.
-  fig-prefix: Fig.
+# crossref:
+#   fig-title: Fig.
+#   fig-prefix: Fig.
 ---
 
 ```{r}
@@ -34,4 +34,27 @@ doc <- inti::gdoc2qmd(file = "manuscript.zip",format = "qmd")
 
 rticle <- knitr::knit_child(doc, quiet = TRUE)
 cat(rticle, sep = '\n')
+```
+
+# Image pdf to JPEG
+
+```{r}
+library(tidyverse)
+library(magick)
+
+pdf4pub <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
+
+path <- "JoSTE/"
+
+imgs <- 1:length(pdf4pub) %>% map(\(x) {
+  
+  filename <- pdf4pub[x] %>% 
+    basename() %>% 
+    gsub(".pdf", "\\1.jpeg", .) 
+  
+  pdf4pub[x] %>% 
+    image_read_pdf() %>% 
+    image_write(format = "jpeg", file.path(path, filename))
+  
+})
 ```

@@ -1,10 +1,10 @@
 **Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic**
 
-Flavio Lozano-Isla^1\*^, Elizabeth Heros-Aguilar^1^, Rember Pinedo-Taco^1^, Andres Casas-Diaz^2^
+Flavio Lozano-Isla^a\*^, Elizabeth Heros-Aguilar^a^, Rember Pinedo-Taco^a^, Andres Casas-Diaz^b^
 
-^1^ Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Fitotecnia, Lima, Perú.
+^a^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Fitotecnia, Lima, Perú.*
 
-^2^ Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Horticultura, Lima, Perú.
+^b^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Horticultura, Lima, Perú.*
 
 \*Corresponding author. Email: [flozano@lamolina.edu.pe](mailto:flozano@lamolina.edu.pe) 
 
@@ -26,13 +26,9 @@ Flavio Lozano-Isla: Conceptualization, Data curation, Formal analysis, Investiga
 
 This work was funded by the Universidad Nacional Agraria La Molina through the Centro de Innovación Educativa and the Unidad de Investigacion de la Facultad de Agronomia. To E. Rios and V. Landa for their motivation to improve the lectures that resulted in the present manuscript. To R. Ortiz for suggestions to improve the manuscript. To the students who participated in the project.
 
-**Conflict of interest**
+# Abstract
 
-Authors declares no conflicts of interest.
-
-```Unknown element type at this position: UNSUPPORTED```# Abstract
-
-In crop science areas there are lectures where concepts are abstract. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. There are different pedagogical strategies to increase the capabilities and interests of students. This paper presents the implementation of a journal club (JC) with the collaborative-metacognitive use of the scientific literature teaching approach (CMSLTA) as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Lerning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read four articles per academic semester and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and an improvement in essay writing.
+Plant genetics lectures can be challenging for students to understand due to the abstract nature of the concepts discussed. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. There are different pedagogical strategies to increase the capabilities and interests of students. This paper presents the implementation of a journal club (JC) with the collaborative-metacognitive use of the scientific literature teaching approach (CMSLTA) as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Lerning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read four articles per academic semester and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and an improvement in essay writing.
 
 **Keywords:** CMSLTA, crop sciences, research tools, sci-hub, seven Cs, Zotero
 
@@ -232,6 +228,12 @@ The implementation of a journal club in plant science lectures has presented an 
 
 The data and the reproducible analysis are available in Supplementary File 3.
 
+
+
+**Conflict of interest**
+
+Authors declares no conflicts of interest.
+
 # 
 
 ```Unknown element type at this position: UNSUPPORTED```# References
@@ -312,13 +314,7 @@ The data and the reproducible analysis are available in Supplementary File 3.
 
 [Xiong, L., Giese, A.-K., Pasi, M., Charidimou, A., van Veluw, S., & Viswanathan, A. (2018). How to Organize a Journal Club for Fellows and Residents. *Stroke*, *49*(9), 283–285. https://doi.org/10.1161/STROKEAHA.118.021728](https://www.zotero.org/google-docs/?h1YWHz)
 
-[Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595–1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?h1YWHz)
-
-
-
-
-
-
+[Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595–1620. [https://doi.org/10.1080/09500690500186592](https://doi.org/10.1080/09500690500186592)​](https://www.zotero.org/google-docs/?h1YWHz)
 
 
 
@@ -333,7 +329,7 @@ The data and the reproducible analysis are available in Supplementary File 3.
 
 | **Title**                                                                                                            | Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic  |
 |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Journal**                                                                                                          | [Learning Environments Research](https://www.springer.com/journal/10984)                                              |
+| **Authors**                                                                                                          | Flavio Lozano-Isla, Elizabeth Heros-Aguilar, Rember Pinedo-Taco, Andres Casas-Diaz                                    |
 
 
 
