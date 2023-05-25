@@ -8,7 +8,7 @@ format:
   docx:
     toc: false
     section-numbers: true
-    reference-doc: JoSTE/style.docx
+    reference-doc: files/unalm.docx
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -26,7 +26,7 @@ execute:
 source("http://inkaverse.com/docs.r")
 # https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#
 
-doc <- inti::gdoc2qmd(file = "manuscript.zip",format = "qmd")
+doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd")
 ```
 
 ```{r}
@@ -58,3 +58,42 @@ imgs <- 1:length(pdf4pub) %>% map(\(x) {
   
 })
 ```
+
+
+
+```{r}
+library(tidyverse)
+
+txt <- "manuscript/Journal-Club_article.md" %>%
+  readLines() %>% 
+  tibble::enframe() %>%
+  dplyr::rowwise() %>% 
+  filter(!grepl("#fig", .data$value)) %>% 
+  filter(!grepl("#tbl", .data$value)) %>% 
+  filter(!grepl("^\\|", .data$value)) %>% 
+  filter(!grepl("UNSUPPORTED", .data$value)) 
+
+fig <- "manuscript/Journal-Club_article.md" %>%
+  readLines() %>% 
+  tibble::enframe() %>%
+  dplyr::rowwise() %>% 
+  filter(grepl("#fig", .data$value)) %>% 
+  select(!name) %>% 
+  deframe() %>% 
+  paste(collapse = "\n\n") %>% 
+  paste("\newpage", "\n\n", .)
+ 
+tab <- "manuscript/Journal-Club_article.md" %>%
+  readLines() %>% 
+  tibble::enframe() %>%
+  dplyr::rowwise() %>% 
+  filter(grepl("#tbl", .data$value)) %>% 
+  select(!name) %>% 
+  deframe() %>% 
+  paste(collapse = "\n\n") %>% 
+  paste("\newpage", "\n\n", .)
+  
+```
+
+
+
