@@ -142,7 +142,7 @@ Un estudio en China indica que zonas con baja humedad relativa o bajas precipita
 
 ### Intensidad del estrés
 
-La sensitividad a la sequía (*Drought Sensitivity* - DRS) se determina mediante dos escalas en la fase vegetativa: el enrollamiento de hojas ([@tbl-id.xa48488c4fok]) y el secado de hojas ([@tbl-id.6yw1vp5ydaxd]). El enrollamiento de hojas precede al secado de hojas durante la sequía. Se debe registrar el estadio de crecimiento de la planta cuando el estrés ocurre y el número de días de estrés [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?w4IcSE).
+La sensitividad a la sequía (*Drought Sensitivity* - DRS) se determina mediante dos escalas en la fase vegetativa: el enrollamiento de hojas ([Table  @tbl:id.xa48488c4fok]:) y el secado de hojas ([Table  @tbl:id.6yw1vp5ydaxd]:). El enrollamiento de hojas precede al secado de hojas durante la sequía. Se debe registrar el estadio de crecimiento de la planta cuando el estrés ocurre y el número de días de estrés [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?w4IcSE).
 
 
 
@@ -159,7 +159,7 @@ La sensitividad a la sequía (*Drought Sensitivity* - DRS) se determina mediante
 
 
 
-: Escala del enrollamiento de hojas de DRS en la fase vegetativa [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?XLvLZK). {#tbl-id.xa48488c4fok}
+: Escala del enrollamiento de hojas de DRS en la fase vegetativa [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?XLvLZK). {#tbl:id.xa48488c4fok}
 
 
 
@@ -178,9 +178,9 @@ La sensitividad a la sequía (*Drought Sensitivity* - DRS) se determina mediante
 
 
 
-: Escala del secado de hojas de DRS en la fase vegetativa [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?bTi5kN). {#tbl-id.6yw1vp5ydaxd}
+: Escala del secado de hojas de DRS en la fase vegetativa [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?bTi5kN). {#tbl:id.6yw1vp5ydaxd}
 
-La recuperación de la sequía (*Drought Recovery* - DRR) ([@tbl-id.3zfrs66wfu9b]) se evalúa 10 días después de la lluvia o riego. Se debe indicar el grado del estrés antes de la recuperación [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?o0FGWs) .
+La recuperación de la sequía (*Drought Recovery* - DRR) ([Table  @tbl:id.3zfrs66wfu9b]:) se evalúa 10 días después de la lluvia o riego. Se debe indicar el grado del estrés antes de la recuperación [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?o0FGWs) .
 
 
 
@@ -196,7 +196,7 @@ La recuperación de la sequía (*Drought Recovery* - DRR) ([@tbl-id.3zfrs66wfu9b
 
 
 
-: Escala de la recuperación de plantas después de la sequía (DRR) [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?nRxULI). {#tbl-id.3zfrs66wfu9b}
+: Escala de la recuperación de plantas después de la sequía (DRR) [(International Rice Research Institute, 2013)](https://www.zotero.org/google-docs/?nRxULI). {#tbl:id.3zfrs66wfu9b}
 
 
 
@@ -224,7 +224,7 @@ El estudio tendrá lugar en el Programa de Cereales y Granos Nativos de la Unive
 
 ## Diseño experimental
 
-La investigación será realizada en un diseño factorial en parcelas divididas en bloques completos al azar. Se tienen dos factores: el factor en parcelas riego (3 niveles: saturado, estrés leve y estrés moderado) y el factor en sub-parcelas cultivar (2 niveles: La Capoteña e IR-71706). Con todas las combinaciones posibles de los factores se tienen 6 tratamientos, los cuales estarán en 4 bloques dando un total de 24 unidades experimentales ([@fig-id.uxazohwuzxv5]):
+La investigación será realizada en un diseño factorial en parcelas divididas en bloques completos al azar. Se tienen dos factores: el factor en parcelas riego (3 niveles: saturado, estrés leve y estrés moderado) y el factor en sub-parcelas cultivar (2 niveles: La Capoteña e IR-71706). Con todas las combinaciones posibles de los factores se tienen 6 tratamientos, los cuales estarán en 4 bloques dando un total de 24 unidades experimentales ([Figure  @fig:id.uxazohwuzxv5]:):
 
 * T1: Cultivar La Capoteña + Riego saturado
 * T2: Cultivar La Capoteña + Riego con periodos de estrés leve
@@ -235,13 +235,7 @@ La investigación será realizada en un diseño factorial en parcelas divididas 
 
 
 
-```{r}
-#| label: fig-id.uxazohwuzxv5
-#| fig-cap: 'Croquis del diseño experimental.'
-#| echo: false
-
-knitr::include_graphics('manuscript/img_0.png')
-```
+![Croquis del diseño experimental.](img_0.png){#fig:id.uxazohwuzxv5}
 
 
 
@@ -267,7 +261,7 @@ En cada unidad experimental (maceta) se tienen 2 plantas de arroz del cultivar c
 
 ## Materiales y equipos
 
-Los materiales ([@tbl-id.vav3n0637ia3]) y equipos ([@tbl-id.j10xu0dbhipx]) que se listan a continuación son los utilizados tanto para la preparación del experimento como los que se utilizarán para el desarrollo del trabajo.
+Los materiales ([Table  @tbl:id.vav3n0637ia3]:) y equipos ([Table  @tbl:id.j10xu0dbhipx]:) que se listan a continuación son los utilizados tanto para la preparación del experimento como los que se utilizarán para el desarrollo del trabajo.
 
 
 
@@ -292,7 +286,7 @@ Los materiales ([@tbl-id.vav3n0637ia3]) y equipos ([@tbl-id.j10xu0dbhipx]) que s
 
 
 
-: Materiales requeridos para la experimentación. {#tbl-id.vav3n0637ia3}
+: Materiales requeridos para la experimentación. {#tbl:id.vav3n0637ia3}
 
 
 
@@ -310,7 +304,7 @@ Los materiales ([@tbl-id.vav3n0637ia3]) y equipos ([@tbl-id.j10xu0dbhipx]) que s
 
 
 
-: Equipos requeridos para la experimentación. {#tbl-id.j10xu0dbhipx}
+: Equipos requeridos para la experimentación. {#tbl:id.j10xu0dbhipx}
 
 ## Preparación del experimento
 
@@ -320,13 +314,7 @@ Si bien el método de estufa es el método más preciso para determinar el conte
 
 
 
-```{r}
-#| label: fig-id.6znubdur9rqf
-#| fig-cap: 'Relación entre la humedad volumétrica registrada por el TDR 350 y la humedad volumétrica hallada por secado a estufa.'
-#| echo: false
-
-knitr::include_graphics('manuscript/img_1.jpg')
-```
+![Relación entre la humedad volumétrica registrada por el TDR 350 y la humedad volumétrica hallada por secado a estufa.](img_1.jpg){#fig:id.6znubdur9rqf}
 
 
 
@@ -447,7 +435,7 @@ Los datos serán procesados y analizados en el software estadístico R (ref?). C
 
 
 
-: Cronograma propuesto de actividades. {#tbl-id.vxlyeqdvszna}
+: Cronograma propuesto de actividades. {#tbl:id.vxlyeqdvszna}
 
 
 
@@ -476,7 +464,7 @@ Los datos serán procesados y analizados en el software estadístico R (ref?). C
 
 
 
-: Presupuesto del proyecto {#tbl-id.gsy2nha3usyo}
+: Presupuesto del proyecto {#tbl:id.gsy2nha3usyo}
 
 
 
