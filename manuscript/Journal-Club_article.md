@@ -100,7 +100,7 @@ The Journal Club (JC) was implemented in the plant genetics lecture of the Agron
 
 ## Teaching Approach
 
-The JC methodology was divided into four stages. The training stage was given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) were repeated for each article with a duration of 60 minutes per session (Figure 1). Although the oral language was Spanish, all the papers were read in English ([Table  @tbl:id.85ly0lr9xnr1]:). All lectures were conducted virtually through the Zoom platform. 
+The JC methodology was divided into four stages. The training stage was given only once per academic semester to all students. The following three steps (i.e. reading, writing, and discussion) were repeated for each article with a duration of 60 minutes per session ([Figure  @fig:kix.496kixf5gqtx]:). Although the oral language was Spanish, all the papers were read in English ([Table  @tbl:id.85ly0lr9xnr1]:). All lectures were conducted virtually through the Zoom platform. 
 
 
 

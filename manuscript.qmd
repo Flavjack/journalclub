@@ -8,7 +8,7 @@ format:
   docx:
     toc: false
     section-numbers: true
-    reference-doc: files/unalm.docx
+    reference-doc: files/style.docx
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -26,7 +26,7 @@ execute:
 source("http://inkaverse.com/docs.r")
 # https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#
 
-doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd")
+doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd", type = "asis")
 ```
 
 ```{r}
@@ -35,6 +35,7 @@ doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd")
 rticle <- knitr::knit_child(doc, quiet = TRUE)
 cat(rticle, sep = '\n')
 ```
+
 
 # Image pdf to JPEG
 
@@ -58,64 +59,5 @@ imgs <- 1:length(pdf4pub) %>% map(\(x) {
   
 })
 ```
-
-
-
-```{r}
-library(tidyverse)
-
-txt <- "manuscript/Journal-Club_article.md" %>%
-  readLines() %>% 
-  tibble::enframe() %>%
-  dplyr::rowwise() %>% 
-  dplyr::filter(!.data$value %in% "# ") %>% 
-  dplyr::mutate(across(.data$value
-                       , ~ gsub("```Unknown element type at this position: UNSUPPORTED```", "", .))) %>%
-  head(which(startsWith(.$value, c('#| END', "#| end"))) - 1)
-
-txtonly <- txt %>% 
-  filter(!grepl("\\|", .data$value)) %>% 
-  filter(!grepl("#tbl", .data$value)) %>% 
-  filter(!grepl("#fig", .data$value))
-
-fig <- txt %>% 
-  dplyr::filter(grepl("#fig", .data$value)) %>% 
-  tibble::as_tibble() %>% 
-  dplyr::group_split(.data$value) %>% 
-  purrr::map_dfr(~ add_row(.x, .before = grepl("#fig", .x))) %>% 
-  dplyr::mutate(across(.data$value, ~ ifelse(is.na(.), "\\newpage", .))) 
-
-figlist <- fig %>% 
-  mutate(value = case_when(
-    row_number() == 1 ~ .data$value
-    , grepl("#fig", .data$value) ~ .data$value
-    , TRUE  ~ "\n\n"
-  ))
-  
-tab <- txt %>% 
-  dplyr::filter(grepl("^\\|", .data$value) | grepl("#tbl", .data$value)) %>% 
-  dplyr::mutate(group = case_when(
-    grepl("^:", .data$value) ~ as.character(.data$name)
-    , TRUE ~ NA
-  )) %>% 
-  tibble::as_tibble() %>% 
-  tidyr::fill("group", .direction = "up") %>% 
-  tidyr::drop_na(.data$group) %>% 
-  dplyr::group_split(.data$group) %>%
-  purrr::map_dfr(~ add_row(.x, .after = grepl("#tbl", .x))) %>% 
-  dplyr::mutate(across(.data$value, ~ ifelse(is.na(.), "\\newpage", .))) %>% 
-  dplyr::select(!.data$group) 
-
-tablist <- tab %>% 
-  dplyr::filter(!grepl("\\|", .data$value)) %>% 
-  mutate(value = case_when(
-    row_number() == 1 ~ .data$value
-    , grepl("#tbl", .data$value) ~ .data$value
-    , TRUE  ~ "\n\n"
-  ))
-  
-
-```
-
 
 
