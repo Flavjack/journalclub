@@ -8,16 +8,16 @@ format:
   docx:
     toc: false
     section-numbers: true
-    reference-doc: files/style.docx
+    reference-doc: prospect/style.docx
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
 execute:
   echo: false
   warning: false
-# crossref:
-#   fig-title: Fig.
-#   fig-prefix: Fig.
+crossref:
+  fig-title: Fig.
+  fig-prefix: Fig.
 ---
 
 ```{r}
@@ -26,7 +26,7 @@ execute:
 source("http://inkaverse.com/docs.r")
 # https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#
 
-doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd", type = "full")
+doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd", type = "asis")
 ```
 
 ```{r}
@@ -37,15 +37,17 @@ cat(rticle, sep = '\n')
 ```
 
 
-# Image pdf to JPEG
+# Image pdf to jpeg
 
 ```{r}
+#| eval: false
+
 library(tidyverse)
 library(magick)
 
 pdf4pub <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
 
-path <- "JoSTE/"
+path <- "prospect/"
 
 imgs <- 1:length(pdf4pub) %>% map(\(x) {
   
