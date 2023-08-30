@@ -24,18 +24,19 @@ execute:
 #| label: setup
 
 source("http://inkaverse.com/docs.r")
-# https://docs.google.com/document/d/1EllVJgpV7gWW7dKh6xgwkJeGPlSRPSr5mn3R1h0msG8/edit#
+# https://docs.google.com/document/d/1gd8ByWAeJuqVtz72u-l6CzwOPEqJixfAdkgk4nQmkUQ/edit
 
-doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd", type = "full")
+doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd"
+                      , type = "listfull"
+                      )
 ```
 
 ```{r}
 #| results: 'asis'
 
-rticle <- knitr::knit_child(doc, quiet = TRUE)
+rticle <- knitr::knit_child(doc$path, quiet = TRUE)
 cat(rticle, sep = '\n')
 ```
-
 
 # Image pdf to JPEG
 
