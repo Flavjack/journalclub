@@ -6,7 +6,7 @@ format:
     toc-location: left
     number-sections: true
     self-contained: true
-    output-file: "ESM_3"
+    output-file: "ESM_1"
 editor_options: 
   chunk_output_type: console
 execute: 
@@ -37,7 +37,7 @@ pipeline <- image_read_pdf("files/pipeline.pdf") %>%
 pipeline %>% 
   image_write(format = "pdf", "files/Fig1.pdf")
   
-include_graphics("files/Fig1.pdf")
+include_pdf("files/Fig1.pdf")
 ```
 
 # Import data
@@ -162,7 +162,7 @@ plot %>%
   ggsave2(filename = c("files/Fig2.pdf")
          , plot = ., width = 20, height = 12, units = "cm")
 
-include_graphics("files/Fig2.pdf")
+include_pdf("files/Fig2.pdf")
 ```
 
 # Tools use Wordcloud
@@ -197,7 +197,7 @@ wordcloud(words = text$tools
           )
 graphics.off()
 
-include_graphics("files/Fig3.pdf")
+include_pdf("files/Fig3.pdf")
 ```
 
 # Googlesheets connect to scores
@@ -269,31 +269,10 @@ plot <- mc %>%
            ) +
   facet_wrap(. ~ year, ncol = 2)
 
-plot
-
 plot %>% 
   ggsave2(filename = "files/Fig4.pdf"
          , plot = ., width = 30, height = 12, units = "cm")
 
-include_graphics("files/Fig4.pdf")
+include_pdf("files/Fig4.pdf")
 ```
-
-# Image pdf to png
-
-```{r}
-library(tiff)
-
-pdf2tiff <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
-
-imgs <- 1:length(pdf2tiff) %>% map(\(x) {
-  
-  filename <- pdf2tiff[x] %>% gsub(".pdf", "\\1.png", .) 
-  
-  pdf2tiff[x] %>% 
-    image_read_pdf() %>% 
-    image_write(format = "png", filename)
-  
-})
-```
-
 

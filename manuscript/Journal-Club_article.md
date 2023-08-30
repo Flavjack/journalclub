@@ -319,6 +319,11 @@ Authors declares no conflicts of interest.
 [Wenke, R., Stehlik, P., Gerrard, J., Mickan, S., & Henry, D. (2023). Using a journal club to navigate a maze of COVID-19 papers in a front-line hospital service. *BMJ Evidence-Based Medicine*. https://doi.org/10.1136/bmjebm-2022-112130](https://www.zotero.org/google-docs/?JVULmA)
 
 [Xiong, L., Giese, A.-K., Pasi, M., Charidimou, A., van Veluw, S., & Viswanathan, A. (2018). How to Organize a Journal Club for Fellows and Residents. *Stroke*, *49*(9), 283-285. https://doi.org/10.1161/STROKEAHA.118.021728](https://www.zotero.org/google-docs/?JVULmA)
+<<<<<<< HEAD
+=======
+
+[Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595-1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?JVULmA)
+>>>>>>> 459e084839888a06981d9c97b0b4ba23f9928a6a
 
 [Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595-1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?JVULmA)
 
