@@ -7,8 +7,9 @@ format:
     self-contained: true
   docx:
     toc: false
+    toc-title: Indice
     section-numbers: true
-    reference-doc: prospect/style.docx
+    reference-doc: "IJSE/style.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -16,26 +17,51 @@ execute:
   echo: false
   warning: false
 crossref:
-  fig-title: Fig.
-  fig-prefix: Fig.
+  fig-title: Figure
+  fig-prefix: Figure
+  tbl-title: Table
+  tbl-prefix: Table
+# params:
+#   template: ""
+#   author: ""
+#   advisor: ""
+#   coadvisor: ""
+#   location: ""
+#   date: ""
+#   institution: ""
+#   faculty: ""
+#   program: ""
+#   type: ""
+#   title: ""
 ---
 
 ```{r}
 #| label: setup
 
 source("http://inkaverse.com/docs.r")
-# https://docs.google.com/document/d/1gd8ByWAeJuqVtz72u-l6CzwOPEqJixfAdkgk4nQmkUQ/edit
+doc <- inti::gdoc2qmd(file = "manuscript.zip", type = "listfull")
+params <- doc$params
+```
 
-doc <- inti::gdoc2qmd(file = "manuscript.zip", format = "qmd"
-                      , type = "listfull"
-                      )
+```{r}
+#| eval: true
+#| results: 'asis'
+
+if(length(params) > 0) {
+ cover <- list.files(path = "files/"
+                    , pattern = paste0("cover-", params$template)
+                    , full.names = T) %>% 
+  knitr::knit_child(quiet = TRUE) %>% 
+  cat(sep = '\n')
+ }
 ```
 
 ```{r}
 #| results: 'asis'
 
-rticle <- knitr::knit_child(doc$path, quiet = TRUE)
-cat(rticle, sep = '\n')
+doc$path %>% 
+  knitr::knit_child(quiet = TRUE) %>% 
+  cat(sep = '\n')
 ```
 
 # Image pdf to jpeg

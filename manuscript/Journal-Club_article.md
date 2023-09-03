@@ -28,7 +28,7 @@ This work was funded by the Universidad Nacional Agraria La Molina through the C
 
 # Abstract
 
-Plant genetics lectures can be challenging for students to understand due to the abstract nature of the concepts discussed. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. There are different pedagogical strategies to increase the capabilities and interests of students. The present work presents the implementation of a journal club (JC) with the collaborative-metacognitive use of the scientific literature teaching approach as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Learning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read four articles per academic semester and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and in essay writing scores.
+Plant genetics lectures can be challenging for students to understand due to the abstract nature of the concepts discussed. This generates a lack of interest in students due to the isolation between theoretical and practical concepts which limits critical thinking in students. Virtualization due to the COVID-19 pandemic aggravated this situation with the lack of practical classes due to the closure of laboratories and experimental fields in universities. This work introduces the establishment of a Journal Club (JC) with the collaborative-metacognitive use of the scientific literature teaching approach as a strategy to reinforce theoretical-practical knowledge through the reading of scientific articles in an e-Learning environment. The methodology was applied in two consecutive academic semesters in years 2021 and 2022 in the plant genetics lectures. The students read scientific articles and performed an essay in groups. The results show that more than 80% of the participants agree with the JC implementation and they consider it relevant to their education. The application of the JC allowed the students to integrate knowledge covered in the theoretical lectures. Additionally, students presented improvements in skills within the framework of the seven Cs for critical thinking, teamwork, use of research tools, and in essay writing scores.
 
 **Keywords:** CMSLTA, crop sciences, research tools, sci-hub, seven Cs, Zotero
 
@@ -96,7 +96,7 @@ The journal club could be classified as an active and participatory pedagogical 
 
 ## Scope and Delimitations
 
-The journal club (JC) was implemented in the plant genetics lecture. A total of 90 students between the sixth and seventh cycle of the agronomy course participated. The implementation took place during two academic semesters in the years 2021 and 2022. Each academic semester has a period of 16 weeks. The project was endorsed and approved by the UNALM. The students were informed of the project and the surveys were conducted voluntarily.
+The journal club (JC) was implemented in the plant genetics lecture. A total of 90 students between the sixth and seventh cycle of the agronomy course participated. The implementation took place during two academic semesters in the years 2021 and 2022. Each academic semester has a period of 16 weeks. The project was endorsed and approved by the university. The students were informed of the project and the surveys were conducted voluntarily.
 
 ## Teaching Approach
 
@@ -162,7 +162,7 @@ The JC methodology was divided into four stages. The training stage was given on
 
 : Questions of the survey to evaluate the level of satisfaction of the journal club in the plant genetics lectures during the period 2021 and 2022. {#tbl:kix.j6aj6xi5zazn}
 
-**Objective rubric:** Writing an essay was the final product of each journal club series (i.e., every three weeks). Grading was based on the use of an objective rubric. The grading system was from 0 to 20, where 20 is the highest grade. The names of the participants were removed from the grading book to maintain the privacy of the students (Supplementary File 1).
+**Objective rubric:** Writing an essay was the final product of each journal club series (i.e., every three weeks). Grading was based on the use of an objective rubric. The grading system was from 0 to 20, where 20 is the highest grade. The names of the participants were removed from the grading book to maintain the privacy of the students.
 
 
 
@@ -224,15 +224,23 @@ The implementation of JC even after the post-COVID pandemic could be productive 
 
 The implementation of a journal club in plant science lectures has presented an alternative that promoted the engagement of students with their learning and created a venue for academic discussions under the lack of field practice. The students perceive the JC as relevant to their formal education and they agree with its implementation. Additionally, the JC allows students to complement their theoretical knowledge and develop soft skills that are essential for success in the modern world and their lifelong learning. The dynamic learning experience of JC remains applicable and relevant beyond the confines of the COVID-19 pandemic, whether in an e-Learning setting or through traditional face-to-face lectures.
 
+# 
+
 # Data availability
 
 The data and the reproducible analysis are available in Supplementary File 1.
 
 
 
-**Conflict of interest**
+# Disclosure statement
 
-Authors declares no conflicts of interest.
+No potential conflict of interest was reported by the authors
+
+# Ethics statement
+
+The project was endorsed and approved by the university. The participants were informed of the study purpose, and their participation was voluntary and anonymous.
+
+
 
 # 
 
@@ -319,11 +327,6 @@ Authors declares no conflicts of interest.
 [Wenke, R., Stehlik, P., Gerrard, J., Mickan, S., & Henry, D. (2023). Using a journal club to navigate a maze of COVID-19 papers in a front-line hospital service. *BMJ Evidence-Based Medicine*. https://doi.org/10.1136/bmjebm-2022-112130](https://www.zotero.org/google-docs/?JVULmA)
 
 [Xiong, L., Giese, A.-K., Pasi, M., Charidimou, A., van Veluw, S., & Viswanathan, A. (2018). How to Organize a Journal Club for Fellows and Residents. *Stroke*, *49*(9), 283-285. https://doi.org/10.1161/STROKEAHA.118.021728](https://www.zotero.org/google-docs/?JVULmA)
-<<<<<<< HEAD
-=======
-
-[Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595-1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?JVULmA)
->>>>>>> 459e084839888a06981d9c97b0b4ba23f9928a6a
 
 [Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595-1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?JVULmA)
 
@@ -337,8 +340,6 @@ Authors declares no conflicts of interest.
 
 
 | **Title**                                                                                                            | Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic  |
-|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Journal**                                                                                                          | PROSPECTS                                                                                                             |
 
 
 
