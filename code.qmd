@@ -36,6 +36,9 @@ pipeline <- image_read_pdf("files/pipeline.pdf") %>%
 
 pipeline %>% 
   image_write(format = "pdf", "files/Fig1.pdf")
+
+pipeline %>% 
+  image_write(format = "eps", "files/Fig1.eps")
   
 include_pdf("files/Fig1.pdf")
 ```
@@ -57,7 +60,7 @@ gs_survey <- as_sheets_id(gsh2)
 ```{r}
 e21.2 <- gs_survey %>% 
   range_read("S21-2") %>% 
-  select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
   rename_with(~gsub("Sobre los artículos"
                    , "Sobre el club de lectura (Journal Club)"
                    , x = .x)) %>% 
@@ -72,7 +75,7 @@ e21.2 <- gs_survey %>%
 
 e22.1 <- gs_survey %>% 
   range_read("S22-1") %>% 
-  select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
   rename_with(~gsub("Sobre los artículos"
                    , "Sobre el club de lectura (Journal Club)"
                    , x = .x)) %>% 
@@ -86,7 +89,7 @@ e22.1 <- gs_survey %>%
 
 fb <- list(e21.2, e22.1) %>% 
   bind_rows() %>% 
-  select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
+  dplyr::select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
   mutate(across(where(is.character), ~na_if(., "Aprendí a usar"))) %>% 
   mutate(across(where(is.character), ~na_if(., "Aprendí a usar, Relevante para mi formación"))) %>% 
   relocate(contains("Opinión"), .after = last_col()) %>% 
@@ -103,14 +106,14 @@ fb %>%
 ```{r}
 lbl <- gs_score %>% 
   range_read("survey") %>% 
-  select(Pregunta, Question) %>%
+  dplyr::select(Pregunta, Question) %>%
   mutate(across(Pregunta, ~gsub("\\¿|\\?", "", .))) %>% 
   deframe() 
 ```
 
 ```{r}
 qst <- fb %>% 
-  select(matches("Sobre")) %>% 
+  dplyr::select(matches("Sobre")) %>% 
   rownames_to_column() %>% 
   pivot_longer(!rowname) %>% 
   mutate(name = gsub(".*\\[(.*)\\]", "\\1", name)) %>% 
@@ -162,6 +165,10 @@ plot %>%
   ggsave2(filename = c("files/Fig2.pdf")
          , plot = ., width = 20, height = 12, units = "cm")
 
+plot %>% 
+  ggsave2(filename = c("files/Fig2.eps")
+         , plot = ., width = 20, height = 12, units = "cm")
+
 include_pdf("files/Fig2.pdf")
 ```
 
@@ -175,7 +182,7 @@ recode <- c("Google académico" = "Google Scholar"
 
 text <- fb %>% 
   rename(tools = "Herramientas que aprendí durante el curso") %>% 
-  select(tools) %>% 
+  dplyr::select(tools) %>% 
   separate_rows(tools, sep = ",") %>% 
   mutate(across(everything(), ~ trimws(.))) %>% 
   drop_na() %>% 
@@ -187,7 +194,7 @@ text <- fb %>%
 
 set.seed(2)
 
-pdf("files/Fig3.pdf", width = 20/2.5, height = 20/2.5)
+pdf("files/Fig3.eps", width = 20/2.5, height = 20/2.5)
 wordcloud(words = text$tools
           , freq = text$freq
           , scale = c(5,0.5)
@@ -205,7 +212,7 @@ include_pdf("files/Fig3.pdf")
 ```{r}
 s21.2 <- gs_score %>% 
   range_read("s21.2") %>% 
-  select(matches("correo|JC-")) %>% 
+  dplyr::select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
                    , "user"
                    , x = .x)) %>% 
@@ -220,7 +227,7 @@ s21.2 <- gs_score %>%
 
 s22.1 <- gs_score %>% 
   range_read("s22.1") %>% 
-  select(matches("correo|JC-")) %>% 
+  dplyr::select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
                    , "user"
                    , x = .x)) %>% 
@@ -271,6 +278,10 @@ plot <- mc %>%
 
 plot %>% 
   ggsave2(filename = "files/Fig4.pdf"
+         , plot = ., width = 30, height = 12, units = "cm")
+
+plot %>% 
+  ggsave2(filename = "files/Fig4.eps"
          , plot = ., width = 30, height = 12, units = "cm")
 
 include_pdf("files/Fig4.pdf")
