@@ -9,7 +9,7 @@ format:
     toc: false
     toc-title: Indice
     section-numbers: true
-    reference-doc: "IJSE/style.docx"
+    reference-doc: "TiHE/style.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console

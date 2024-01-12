@@ -46,11 +46,11 @@ include_pdf("files/Fig1.pdf")
 # Import data
 
 ```{r}
-gsh1 <- "https://docs.google.com/spreadsheets/d/1yh44GeIx0mLttMmgFSuQ-aNGLRO9yewaq8MWAclnznE/edit#gid=111798384"
+gsh1 <- "https://docs.google.com/spreadsheets/d/1Wz8-30f1KopqqCrmHSly-rdQkeqH8yR19yuGY76Q-k0/edit#gid=412794809"
 # browseURL(gsh)
 gs_score <- as_sheets_id(gsh1)
 
-gsh2 <- "https://docs.google.com/spreadsheets/d/1G2hvWcnEMCrrvR_J0_j2IBpAUELx1dAhTaOK8eObBK8/edit#gid=1412841139"
+gsh2 <- "https://docs.google.com/spreadsheets/d/1ot6L2RlnsLWSwMhK-SIZUuLLFfHV4cmqRQUe7B7tC_Q/edit#gid=1412841139"
 # browseURL(gsh)
 gs_survey <- as_sheets_id(gsh2)
 ```
