@@ -9,7 +9,7 @@ format:
     toc: false
     toc-title: Indice
     section-numbers: true
-    reference-doc: "TiHE/style.docx"
+    reference-doc: "IHE/style.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -64,9 +64,9 @@ doc$path %>%
   cat(sep = '\n')
 ```
 
-# Image pdf to jpeg
 
 ```{r}
+#| label: Image pdf to jpeg
 #| eval: false
 
 library(tidyverse)

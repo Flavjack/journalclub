@@ -1,30 +1,28 @@
-**Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic**
+**Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic**
 
-Flavio Lozano-Isla^a\*^, Elizabeth Heros-Aguilar^a^, Rember Pinedo-Taco^a^, Andres Casas-Diaz^b^
+Flavio Lozano-Isla^a\*^, Elizabeth Heros-Aguilar^a^, Andres Casas-Diaz^b^
 
 ^a^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Fitotecnia, Lima, Perú.*
 
 ^b^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Horticultura, Lima, Perú.*
 
-\*Corresponding author. Email: [flozano@lamolina.edu.pe](mailto:flozano@lamolina.edu.pe) 
+\*Corresponding author. Email: [flozanoisla@gmail.com](mailto:flozanoisla@gmail.com) 
 
-ORCID IDs:
+ORCiD IDs:
 
 Flavio Lozano-Isla: 0000-0002-0714-669X
 
 Elizabeth Heros-Aguilar: 0000-0002-0179-3124
 
-Rember Pinedo-Taco: 0000-0001-5910-9332
-
 Andres Casas-Diaz: 0000-0001-7461-3924
 
 **Author contributions**
 
-Flavio Lozano-Isla: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Writing – original draft. Elizabeth Heros-Aguilar: Project administration, Validation, Writing – review & editing. Rember Pinedo-Taco: Conceptualization, Writing - review and editing, Resources. Andres Casas-Diaz: Supervision, Writing – review & editing.
+Flavio Lozano-Isla: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Writing – original draft. Elizabeth Heros-Aguilar: Project administration, Validation, Writing – review & editing. Andres Casas-Diaz: Supervision, Writing – review & editing.
 
 **Acknowledgments**
 
-This work was funded by the National Agrarian University La Molina through the Center for Educational Innovation and the Research Unit of the Faculty of Agronomy. To E. Rios and V. Landa for their motivation to improve the courses that resulted in the present manuscript. To R. Ortiz for suggestions to improve the manuscript. To the students who participated in the project.
+This work was supported by the National Agrarian University La Molina through the Center for Educational Innovation and the Research Unit of the Faculty of Agronomy. To E. Rios and V. Landa for their motivation to improve the courses that resulted in the present manuscript. To R. Ortiz for suggestions to improve the manuscript. To the students who participated in the project.
 
 # Abstract
 
@@ -86,7 +84,7 @@ The implementation of a journal club could reinforce the following concepts:
 1. Computerized/information and communication technologies: By using technology to explore, read, and discuss scientific literature, students can develop their digital skills.
 1. Career/lifelong learning: JC is an active learning methodology that promotes keeping up-to-date with the literature and promotes self-learning allowing long-term learning.
 
-***Pedagogical Skills in Science Education***
+## Pedagogical Skills in Science Education
 
 University professors usually have specialized academic training in their field of study, however, they may lack the pedagogical skills to teach science. Many university professors have obtained additional training in pedagogy or have experience teaching science [(Ganzert et al. 2017)](https://www.zotero.org/google-docs/?OsX5Ky). Some university professors may not have formal pedagogical training and may have difficulty applying effective teaching techniques. The universities can provide training and support to help professors develop pedagogical skills [(Zohar and Schwartzer 2011)](https://www.zotero.org/google-docs/?Su6VPG). The pandemic highlighted the continuous necessity for educational research focused on pedagogy [(Singer et al. 2013)](https://www.zotero.org/google-docs/?UjIAfT). Additionally, it emphasized the importance of investigating how instructors can optimally transition their teaching methods from face-to-face to remote modalities [(Barton 2020)](https://www.zotero.org/google-docs/?2soY6V).
 
@@ -139,11 +137,13 @@ At the beginning of the course, all students received training in the use of too
 
 
 
-![Journal club teaching approach implemneted in plant genetics lectures during two academic semesters in years 2021 and 2022. During the training, the students learned different tools to read, write, and discuss scientific documents. In week 1, the article was shared and the students began reading it. The students in groups started writing their essays in week 2, while in week 3, they discussed in random groups the assigned paper. Four journal clubs were conducted for each academic semester.](img_0.png){#fig:kix.496kixf5gqtx}
+![Journal club teaching approach implemented in plant genetics lectures during two academic semesters in years 2021 and 2022. During the training, the students learned different tools to read, write, and discuss scientific documents. In week 1, the article was shared and the students began reading it. The students in groups started writing their essays in week 2, while in week 3, they discussed in random groups the assigned paper. Four journal clubs were conducted for each academic semester.](img_0.png){#fig:kix.496kixf5gqtx}
 
 ## Instrument
 
-**Survey design:** A survey was designed to determine the level of satisfaction with the JC implementation. In addition, objective questions were included to evaluate the tools that participants learned and used during the course. The survey was voluntary and anonymous to allow students to express their opinions without any restrictions.
+**Survey design:** A survey was designed to determine the level of satisfaction with the JC implementation. In addition, objective questions were included to evaluate the tools that participants learned and used during the course ([Table  @tbl:kix.j6aj6xi5zazn]:). The survey was voluntary and anonymous to allow students to express their opinions without any restrictions.
+
+
 
 
 
@@ -233,6 +233,10 @@ Implementing a journal club in plant science course has presented an alternative
 # Data availability
 
 The data and the reproducible analysis can be found in Supplementary File 1.
+
+
+
+**Statements and Declarations**
 
 # Disclosure statement
 
