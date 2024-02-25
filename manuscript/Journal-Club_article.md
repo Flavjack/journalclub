@@ -1,10 +1,12 @@
 **Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic**
 
-Flavio Lozano-Isla^a\*^, Elizabeth Heros-Aguilar^a^, Andres Casas-Diaz^b^
+Flavio Lozano-Isla^a, c\*^, Elizabeth Heros-Aguilar^a^, Andres Casas-Diaz^b^
 
-^a^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Fitotecnia, Lima, Perú.*
+^a^ *Departamento Académico de Fitotecnia, Facultad de Agronomía, Universidad Nacional Agraria La Molina, Lima, Perú.*
 
-^b^ *Universidad Nacional Agraria La Molina, Facultad de Agronomía, Departamento Académico de Horticultura, Lima, Perú.*
+^b^ *Departamento Académico de Horticultura, Facultad de Agronomía, Universidad Nacional Agraria La Molina, Lima, Perú.*
+
+^b^ *Instituto de Investigación para el Desarrollo Sustentable de Ceja de Selva, Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas, Chachapoyas, Peru.*
 
 \*Corresponding author. Email: [flozanoisla@gmail.com](mailto:flozanoisla@gmail.com) 
 
@@ -102,8 +104,6 @@ At the beginning of the course, all students received training in the use of too
 
 
 
-
-
 ```Unknown element type at this position: UNSUPPORTED```
 
 
@@ -172,7 +172,7 @@ At the beginning of the course, all students received training in the use of too
 
 Data analysis was performed in the statistical software R version 4.2.2 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the factors: the journal club sessions, the section, and the semester of methodology implementation. The obtained results underwent analysis of variance to assess the interaction between the factors. The estimated marginal means and the pair-wise comparisons test were performed with *emmeans* [(Lenth et al. 2023)](https://www.zotero.org/google-docs/?lIGMen) and *multcomp* [(Hothorn et al. 2023)](https://www.zotero.org/google-docs/?pVBDKG) R package respectively. The graphs were made with the *inti* package. Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the *wordcloud* package [(Fellows 2018)](https://www.zotero.org/google-docs/?2YZZUI). 
 
-The replicable analysis was carried out utilizing Quarto, an open-source system for scientific and technical publishing [(Allaire et al. 2023,](https://www.zotero.org/google-docs/?dAkyH6) Supplementary File 1[)](https://www.zotero.org/google-docs/?dAkyH6)
+The replicable analysis was carried out utilizing Quarto, an open-source system for scientific and technical publishing [(Allaire et al. 2023,](https://www.zotero.org/google-docs/?dAkyH6) Online Resource 1[)](https://www.zotero.org/google-docs/?dAkyH6)
 
 # 
 
@@ -334,6 +334,8 @@ The project was endorsed and approved by the university. The participants were i
 
 [Zohar, A., & Schwartzer, N. (2011). Assessing Teachers’ Pedagogical Knowledge in the Context of Teaching Higher‐order Thinking. *International Journal of Science Education*, *27*(13), 1595–1620. https://doi.org/10.1080/09500690500186592](https://www.zotero.org/google-docs/?JVULmA)
 
+
+
 #| end
 
 ```Unknown element type at this position: UNSUPPORTED```# Supplementary information
@@ -341,11 +343,7 @@ The project was endorsed and approved by the university. The participants were i
 
 
 
-
-
-| **Title**                                                                                                            | Implementing a journal club as a teaching-learning strategy for plant genetics lectures during the COVID-19 pandemic  |
-
-
+| **Title**                                                                                                     | Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic  |
 
 
 
@@ -381,22 +379,6 @@ We think that the changes we have made can effectively address the suggested iss
 
 
 
-
-**Response to reviewer's comments**
-
-**Review #1:**
-
-Responses to the challenges of teaching during the pandemic is an area of interest to the community of researchers of teaching and learning of science. As such, your work will likely be of interest to the RISE readership, however, the study as reported is insufficiently grounded in contemporary science education research. We would also expect to see robust theoretical positioning for the work. That said, your work has potential for publication in RISE. However, before it can be considered further, there are several concerns: 1) the work must be robustly positioned in contemporary science education research; 2) theoretical perspectives must be developed thoroughly to underpin the work; 3) key constructs of relevance should be developed through a current and thorough literature review; and, 4) papers must rise above the level of the local context (for example, beyond simply ‘what to teach’ or an evaluation of a locally-developed innovation) as well as position the study.
-
-**Reply review #1**
-
-Thanks for the suggestions to improve the manuscript. To address the four concerns issues in the manuscript, We implemented several changes: 
-
-Firstly, we developed a theoretical framework to provide a comprehensive understanding of the topics covered in the manuscript (Lines 71-134), which included e-Learning, journal club, CMSLTA, seven Cs, and pedagogy (Issues 1 and 3). 
-
-Next, we focused on the pedagogical perspective of the journal club and its application within the framework of the Collaborative-metacognitive use of science literature teaching approach (CMSLTA) and the seven Cs (Issues 2 and 4), as these skills are essential for students in contemporary education. These changes were included in Lines 135 to 151.
-
-We also restructured the manuscript to improve its organization and readability in the methodology (Lines 151 to 164), and we included the study's limitations (Lines 275 to 279).
 
 ---
 
