@@ -26,6 +26,24 @@ Flavio Lozano-Isla: Conceptualization, Data curation, Formal analysis, Investiga
 
 This work was supported by the National Agrarian University La Molina through the Center for Educational Innovation and the Research Unit of the Faculty of Agronomy. To E. Rios and V. Landa for their motivation to improve the courses that resulted in the present manuscript. To R. Ortiz for suggestions to improve the manuscript. To the students who participated in the project.
 
+# Data availability
+
+The data and the reproducible analysis of this study are available on request from the corresponding author.
+
+
+
+**Statements and Declarations**
+
+# Disclosure statement
+
+No potential conflict of interest was reported by the authors
+
+# Ethics statement
+
+The project was endorsed and approved by the university. The participants were informed of the study's purpose, and their participation was voluntary and anonymous.
+
+
+
 \newpage
 **Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic** 
 
@@ -49,10 +67,7 @@ The initial purpose of a Journal Club (JC) was to assist physicians in keeping u
 
 The present work was part of a pedagogical training course entitled "Designing my course" for professors starting their academic careers at the university. Each professor was encouraged to implement an improvement methodology in one of the lectures of his or her specialty. We describe and analyze the implementation of an e-learning JC during two academic semesters for plant genetics lectures as a collaborative-metacognitive use of science literature teaching approach (CMSLTA).
 
-The primary hypothesis posited that the integration of JC could enhance the ability to connect lecture topics in an environment where practical knowledge was limited due to COVID-19 restrictions.
-
-
-
+The primary hypothesis posited that the integration of JC could enhance the ability to connect lecture topics in an environment where practical knowledge was limited due to COVID-19 restrictions. 
 
 # Conceptual framing: e-Learning, Journal Club, CMSLTA, Seven Cs and pedagogy 
 
@@ -60,7 +75,7 @@ The primary hypothesis posited that the integration of JC could enhance the abil
 
 e-learning is a term that refers to online or distance learning, which uses digital technologies to deliver education and training over the Internet  [(Clark and Mayer 2016; Mahdizadeh et al. 2008)](https://www.zotero.org/google-docs/?aK7hST). Learning materials are delivered through an online learning platform and may include videos, readings, quizzes, discussion forums, and other interactive activities [(Ganzert et al. 2017)](https://www.zotero.org/google-docs/?SAWuOG). Students can access learning materials from anywhere and at any time, giving them greater flexibility in their learning [(Mayer 2003)](https://www.zotero.org/google-docs/?hfhIKN).
 
-During the COVID-19 pandemic, many universities around the world adopted e-learning to continue online teaching and learning [(Daniel 2020)](https://www.zotero.org/google-docs/?tcBAPq). The pandemic forced many educational institutions to temporarily close their campuses and look for alternatives to continue offering education to students [(Mahdi 2023)](https://www.zotero.org/google-docs/?bxDL1p). e-learning became a popular option, as it allowed students to continue their education from home and remain safe during the pandemic. Many universities use online tools and platforms to offer live, recorded lectures, assignments, and assessments to students.
+During the COVID-19 pandemic, many universities around the world adopted e-learning to continue online teaching and learning [(Daniel 2020)](https://www.zotero.org/google-docs/?tcBAPq). The pandemic forced many educational institutions to temporarily close their campuses and look for alternatives to continue offering education to students [(Mahdi 2023)](https://www.zotero.org/google-docs/?bxDL1p). e-learning became a popular option, allowing students to continue their education from home and remain safe during the pandemic. Many universities use online tools and platforms to offer live, recorded lectures, assignments, and assessments to students.
 
 ## Journal Club
 
@@ -80,7 +95,7 @@ In the context of the present implementation of JC, students work together to re
 
 ## Seven Cs
 
-The concept of the seven Cs refers to a framework of twenty-first-century skills and is composed of seven key elements: communication, collaboration, creativity, critical thinking, cross-cultural understanding, computerized/information and communication technologies, and career/lifelong learning [(Daloos and Paderna 2023)](https://www.zotero.org/google-docs/?zdVyo0). These elements are important for any type of communication, whether written or oral, and are especially useful in professional and academic environments. By following the principles of the seven Cs, the quality of communication can be improved and the comprehension and effectiveness of the messages transmitted can be increased. 
+The concept of the seven Cs refers to a framework of twenty-first-century skills. It is composed of seven key elements: communication, collaboration, creativity, critical thinking, cross-cultural understanding, computerized/information and communication technologies, and career/lifelong learning [(Daloos and Paderna 2023)](https://www.zotero.org/google-docs/?zdVyo0). These elements are important for any type of communication, whether written or oral, and are especially useful in professional and academic environments. By following the principles of the seven Cs, the quality of communication can be improved and the comprehension and effectiveness of the messages transmitted can be increased. 
 
 The implementation of a journal club could reinforce the following concepts:
 
@@ -128,9 +143,9 @@ At the beginning of the course, all students received training in the use of too
 
 
 
-**Training - Research tools :** Students learn diverse tools that will enable the appropriate use of software and applications for reading articles and writing essays. Among these tools was Zotero in the desktop version as the web connector, Google Docs, Hypothesis, and web translators (i.e., Google Translate, DeepL, and DocTranslator) and Articul8 (Google Docs extension). The training stage was in the first week of each semester and took 120 minutes.
+**Training - Research tools:** Students learn diverse tools that will enable the appropriate use of software and applications for reading articles and writing essays. Among these tools was Zotero in the desktop version as the web connector, Google Docs, Hypothesis, and web translators (i.e., Google Translate, DeepL, and DocTranslator) and Articul8 (Google Docs extension). The training stage was in the first week of each semester and took 120 minutes.
 
-**Week 1 - Reading articles:** Students were assigned into random groups of three to four. The groups and the randomization were made automatically in the Moodle system. At the beginning of the session, the article was introduced and the students had 30 minutes to read it and extract all the essential information. At the end of the reading time, the main points in the article are discussed (i.e topic, research question, hypothesis, and main results).
+**Week 1 - Reading articles:** Students were assigned into random groups of three to four. The groups and the randomization were made automatically in the Moodle system. At the beginning of the session, the article was introduced and the students had 30 minutes to read it and extract all the essential information. At the end of the reading time, the main points in the article are discussed (i.e. topic, research question, hypothesis, and main results).
 
 **Week 2 - Essay writing:** In the first 40 minutes the students in groups began to organize the writing of their essays. In the remaining 20 minutes, guidance on how to improve the essay writing or provide feedback from the previous JC was conducted. 
 
@@ -159,9 +174,9 @@ At the beginning of the course, all students received training in the use of too
 
 ## Data Collection and Analysis
 
-Data analysis was performed in the statistical software R version 4.2.2 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the factors: the journal club sessions, the section, and the semester of methodology implementation. The obtained results underwent analysis of variance to assess the interaction between the factors. The estimated marginal means and the pair-wise comparisons test were performed with *emmeans* [(Lenth et al. 2023)](https://www.zotero.org/google-docs/?lIGMen) and *multcomp* [(Hothorn et al. 2023)](https://www.zotero.org/google-docs/?pVBDKG) R package respectively. The graphs were made with the *inti* package. Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the *wordcloud* package [(Fellows 2018)](https://www.zotero.org/google-docs/?2YZZUI). 
+Data analysis was performed in the statistical software R version 4.2.2 ([R Core Team, 2020](https://www.zotero.org/google-docs/?U07ghK)). The scores were analyzed in a linear model taking into account the interaction of the factors: the journal club sessions, the section, and the semester of methodology implementation. The obtained results underwent analysis of variance to assess the interaction between the factors. The estimated marginal means and the pairwise comparisons test were performed with *emmeans* [(Lenth et al. 2023)](https://www.zotero.org/google-docs/?lIGMen) and *multcomp* [(Hothorn et al. 2023)](https://www.zotero.org/google-docs/?pVBDKG) R package respectively. The graphs were made with the *inti* package. Qualitative data analysis and graphs were analyzed by the frequency of occurrence of terms with the *wordcloud* package [(Fellows 2018)](https://www.zotero.org/google-docs/?2YZZUI). 
 
-The replicable analysis was carried out utilizing Quarto, an open-source system for scientific and technical publishing [(Allaire et al. 2023,](https://www.zotero.org/google-docs/?dAkyH6) Online Resource 1[)](https://www.zotero.org/google-docs/?dAkyH6)
+The replicable analysis was carried out utilizing Quarto, an open-source system for scientific and technical publishing [(Allaire et al. 2023)](https://www.zotero.org/google-docs/?dAkyH6)
 
 
 \newpage
@@ -198,13 +213,13 @@ Section B in the 2022-1 semester did not show an improvement in the grading duri
 
 # Discussion 
 
-With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in universities worldwide [(Barton 2020; Daniel 2020; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?JNDh8q). Synchronous and asynchronous e-learning became the main environment in which students interacted. Active learning classroom strategies need to be generated to engage the interest and motivation of students [(Garcia-Vedrenne et al. 2020)](https://www.zotero.org/google-docs/?iIpTun). In this context, JC could be considered a project-based pedagogical tool, as students are tasked with reading and analyzing scientific articles and then presenting and discussing their findings (i.e. essay). We analyzed the implementation of a synchronous e-Lerniang journal club at plant genetics lectures. The results show that there is a positive perception of students towards the implementation of a journal club based on the application of a collaborative-metacognitive use of science literature teaching approach (CMSLTA). 
+With the advent of the COVID-19 pandemic in 2020, there was a huge change in the development of lectures in universities worldwide [(Barton 2020; Daniel 2020; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?JNDh8q). Synchronous and asynchronous e-learning became the main environment in which students interacted. Active learning classroom strategies need to be generated to engage the interest and motivation of students [(Garcia-Vedrenne et al. 2020)](https://www.zotero.org/google-docs/?iIpTun). In this context, JC could be considered a project-based pedagogical tool, as students are tasked with reading and analyzing scientific articles and then presenting and discussing their findings (i.e. essay). We analyzed the implementation of a synchronous e-learning journal club at plant genetics lectures. The results show that there is a positive perception of students towards the implementation of a journal club based on the application of a collaborative-metacognitive use of science literature teaching approach (CMSLTA). 
 
 For a long time, JC was used for teaching and knowledge sharing in medicine [(Aweid et al. 2022; Ozkara et al. 2022)](https://www.zotero.org/google-docs/?r9mwoa), and in post-graduate education [(Taverna et al. 2022)](https://www.zotero.org/google-docs/?GfRcyR). The use of the JC approach has been proven to be educationally valuable. It assists in the development of critical critique skills, raises awareness of research, empowers professionals, fosters a positive research culture, and promotes evidence-based practice [(Xiong et al. 2018)](https://www.zotero.org/google-docs/?3Vi89N). The JC implementation received excellent feedback from participants. Our results reveal that 83% of the participants who participated in the implementation of the JC in the plant genetics lecture found it productive, and relevant to their formal education and they agreed with its implementation.
 
-Meetings lasted ca.1 hour per week. An improvement in student interaction was achieved since the activities were in groups and open discussions with all the participants. Additionally, the students showed an improvement in their academic reading ability because the JC implies active learning [(Ragland et al. 2023)](https://www.zotero.org/google-docs/?6z4JE3). Nevertheless, there was a reduction in grades when the students were exposed to reading and discussing research articles. However, there was an increase in the grading in four out of the five groups in the two evaluated academic semesters. Similar results were found by other authors during the JC sessions where the participants showed increased knowledge and critical thinking [(Golden 2023; Ilic et al. 2020; Taverna et al. 2022)](https://www.zotero.org/google-docs/?fKUFdz). 
+Meetings lasted ca.1 hour per week. Student interaction was improved since the activities were in groups and open discussions with all the participants. Additionally, the students showed an improvement in their academic reading ability because the JC implies active learning [(Ragland et al. 2023)](https://www.zotero.org/google-docs/?6z4JE3). Nevertheless, there was a reduction in grades when the students were exposed to reading and discussing research articles. However, there was an increase in the grading in four out of the five groups in the two evaluated academic semesters. Similar results were found by other authors during the JC sessions where the participants showed increased knowledge and critical thinking [(Golden 2023; Ilic et al. 2020; Taverna et al. 2022)](https://www.zotero.org/google-docs/?fKUFdz). 
 
-In plant sciences courses, field practices are an important component in the education of the students [(Fleischner et al. 2017)](https://www.zotero.org/google-docs/?oTkCCh). The shutdown of university campuses as a result of the COVID-19 pandemic and the rapid shift to online courses resulted in students becoming isolated from their respective universities, leading to a detrimental impact on their educational experience [(McKim et al. 2021; Sahu 2020)](https://www.zotero.org/google-docs/?skHPAa). The JC is presented as a relevant alternative to an e-learning approach to promoting the discussion and participation of students to strengthen the knowledge acquired in the theoretical lectures. In addition, the curricular structure of the lectures (i.e. syllabus) describes the themes presented in an isolated manner, which makes it difficult to understand the knowledge as a whole. By utilizing the CMSLTA approach within the JC, students are empowered to explore and analyze the latest scholarly literature while actively discussing its relevance and practical applications. Moreover, the incorporation of this approach not only fosters problem-solving skills but also promotes collaboration. It empowers students by providing them with tools to apply their acquired knowledge to real-world situations.
+In plant sciences courses, field practices are an important component in the education of the students [(Fleischner et al. 2017)](https://www.zotero.org/google-docs/?oTkCCh). The shutdown of university campuses as a result of the COVID-19 pandemic and the rapid shift to online courses resulted in students becoming isolated from their respective universities, leading to a detrimental impact on their educational experience [(McKim et al. 2021; Sahu 2020)](https://www.zotero.org/google-docs/?skHPAa). The JC is presented as a relevant alternative to an e-learning approach to promoting the discussion and participation of students to strengthen the knowledge acquired in theoretical lectures. In addition, the curricular structure of the lectures (i.e. syllabus) describes the themes presented in an isolated manner, which makes it difficult to understand the knowledge as a whole. By utilizing the CMSLTA approach within the JC, students are empowered to explore and analyze the latest scholarly literature while actively discussing its relevance and practical applications. Moreover, the incorporation of this approach not only fosters problem-solving skills but also promotes collaboration. It empowers students by providing them with tools to apply their acquired knowledge to real-world situations.
 
 The implementation of a JC at plant genetics helps strengthen skills such as critical thinking, teamwork, independent learning, tolerance to different opinions, and digital skills included in the seven Cs framework. An advantage of implementing a journal club with essay writing is the reduction of cheating and plagiarism [(Reynolds et al. 2020)](https://www.zotero.org/google-docs/?DKO3gL).  The use of articles allows for the diversification of readings in each semester. In most cases, the students benefit from the state of the art in the studied area and associate the theoretical knowledge that they are learning. However, our findings indicate that numerous students turn to platforms such as Sci-Hub due to limited access to up-to-date study materials, as the universities are not subscribed to relevant journals [(Wan 2023)](https://www.zotero.org/google-docs/?jIbyoD). It is essential to recognize that employing such resources involves infringing intellectual property rights and copyright laws [(Hoy 2017)](https://www.zotero.org/google-docs/?FgOTXL). Consequently, it becomes imperative to pursue legitimate and ethical alternatives that enable university students to access academic information while upholding the principles of copyright laws [(Pastor-Ramon et al. 2023)](https://www.zotero.org/google-docs/?W4XOUc).
 
@@ -217,28 +232,7 @@ The implementation of JC even after the post-COVID pandemic could be productive 
 Implementing a journal club in plant science course has presented an alternative that promotes students' engagement with their learning and created a venue for academic discussions under the lack of field practice. The students perceive the JC as relevant to their formal education and they agree with its implementation. Additionally, the JC allows students to complement their theoretical knowledge and develop soft skills that are essential for success in the modern world and their lifelong learning. The dynamic learning experience of JC remains applicable and relevant beyond the confines of the COVID-19 pandemic, whether in an e-learning setting or through traditional face-to-face lectures.
 
 
-# Data availability
-
-The data and the reproducible analysis can be found in Supplementary File 1.
-
-
-
-**Statements and Declarations**
-
-# Disclosure statement
-
-No potential conflict of interest was reported by the authors
-
-# Ethics statement
-
-The project was endorsed and approved by the university. The participants were informed of the study's purpose, and their participation was voluntary and anonymous.
-
-
-
-
 \newpage
-
-
 # References
 
 [Allaire, J. J., Teague, C., Scheidegger, C., Xie, Y., & Dervieux, C. (2023). Quarto: open-source scientific and technical publishing system built on Pandoc. https://quarto.org/](https://www.zotero.org/google-docs/?JVULmA)
@@ -247,7 +241,7 @@ The project was endorsed and approved by the university. The participants were i
 
 [Barton, D. C. (2020). Impacts of the COVID-19 pandemic on field instruction and remote teaching alternatives: Results from a survey of instructors. *Ecology and Evolution*, *10*(22), 12499–12507. https://doi.org/10.1002/ece3.6628](https://www.zotero.org/google-docs/?JVULmA)
 
-[Clark, R. C., & Mayer, R. E. (2016). *E-learning and the science of instruction: Proven guidelines for consumers and designers of multimedia learning*. john Wiley & sons. https://onlinelibrary.wiley.com/doi/book/10.1002/9781119239086](https://www.zotero.org/google-docs/?JVULmA)
+[Clark, R. C., & Mayer, R. E. (2016). *E-learning and the science of instruction: Proven guidelines for consumers and designers of multimedia learning*. John Wiley & sons. https://onlinelibrary.wiley.com/doi/book/10.1002/9781119239086](https://www.zotero.org/google-docs/?JVULmA)
 
 [Daloos, Ma. L. A. S., & Paderna, E. E. S. (2023). Enhancing Students’ Concept Understanding Through Collaborative-Metacognitive Use of Science Literature. *Research in Science Education*, *53*(1), 81–97. https://doi.org/10.1007/s11165-022-10049-7](https://www.zotero.org/google-docs/?JVULmA)
 
