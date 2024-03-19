@@ -9,7 +9,7 @@ format:
     toc: false
     toc-title: Indice
     section-numbers: true
-    reference-doc: "IHE/style.docx"
+    reference-doc: "DiEd/style.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -39,7 +39,9 @@ crossref:
 #| label: setup
 
 source("http://inkaverse.com/docs.r")
-doc <- inti::gdoc2qmd(file = "manuscript.zip", type = "listfull")
+doc <- inti::gdoc2qmd(file = "manuscript.zip"
+                      # , type = "listfull"
+                      )
 params <- doc$params
 ```
 
