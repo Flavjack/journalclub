@@ -48,20 +48,16 @@ include_pdf("files/Fig1.pdf")
 # Import data
 
 ```{r}
-gsh1 <- "https://docs.google.com/spreadsheets/d/1Wz8-30f1KopqqCrmHSly-rdQkeqH8yR19yuGY76Q-k0/edit#gid=412794809"
+url <- "https://docs.google.com/spreadsheets/d/1Wz8-30f1KopqqCrmHSly-rdQkeqH8yR19yuGY76Q-k0/edit?usp=sharing"
 # browseURL(gsh)
-gs_score <- as_sheets_id(gsh1)
-
-gsh2 <- "https://docs.google.com/spreadsheets/d/1ot6L2RlnsLWSwMhK-SIZUuLLFfHV4cmqRQUe7B7tC_Q/edit#gid=1412841139"
-# browseURL(gsh)
-gs_survey <- as_sheets_id(gsh2)
+gs <- as_sheets_id(url)
 ```
 
 # Googlesheets connect to surveys
 
 ```{r}
 e21.2 <- gs_survey %>% 
-  range_read("S21-2") %>% 
+  range_read("survey21-2") %>% 
   dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
   rename_with(~gsub("Sobre los artículos"
                    , "Sobre el club de lectura (Journal Club)"
@@ -76,7 +72,7 @@ e21.2 <- gs_survey %>%
 
 
 e22.1 <- gs_survey %>% 
-  range_read("S22-1") %>% 
+  range_read("survey22-1") %>% 
   dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
   rename_with(~gsub("Sobre los artículos"
                    , "Sobre el club de lectura (Journal Club)"
@@ -213,7 +209,7 @@ include_pdf("files/Fig3.pdf")
 
 ```{r}
 s21.2 <- gs_score %>% 
-  range_read("s21.2") %>% 
+  range_read("score21.2") %>% 
   dplyr::select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
                    , "user"
@@ -228,7 +224,7 @@ s21.2 <- gs_score %>%
   mutate(year = "2021-2", .before = user)
 
 s22.1 <- gs_score %>% 
-  range_read("s22.1") %>% 
+  range_read("score22.1") %>% 
   dplyr::select(matches("correo|JC-")) %>% 
   rename_with(~gsub("Dirección de correo"
                    , "user"
