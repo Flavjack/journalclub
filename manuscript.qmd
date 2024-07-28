@@ -9,7 +9,7 @@ format:
     toc: false
     toc-title: Indice
     section-numbers: true
-    reference-doc: "DiEd/style.docx"
+    reference-doc: "DisEd/submision/style.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -76,7 +76,7 @@ library(magick)
 
 pdf4pub <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
 
-path <- "prospect/"
+path <- "DisEd/"
 
 imgs <- 1:length(pdf4pub) %>% map(\(x) {
   
