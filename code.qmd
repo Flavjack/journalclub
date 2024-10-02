@@ -1,7 +1,5 @@
 ---
 title: "Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic"
-subtitle: Discover Education
-author: Flavio Lozano-Isla; Elizabeth Heros-Aguilar; Andres Casas-Diaz
 format:
   html:
     toc: true
@@ -38,12 +36,12 @@ pipeline <- image_read_pdf("files/pipeline.pdf") %>%
   image_crop("1350x1500")
 
 pipeline %>% 
-  image_write(format = "jpg", "files/Fig1.jpg")
+  image_write(format = "jpg", "submission/Fig1.jpg")
 
 pipeline %>% 
-  image_write(format = "eps", "files/Fig1.eps")
+  image_write(format = "eps", "submission/Fig1.eps")
   
-include_graphics("files/Fig1.jpg")
+include_graphics("submission/Fig1.jpg")
 ```
 
 # Import data
@@ -161,14 +159,14 @@ plot <- qst %>%
   geom_hline(yintercept = 75, color = "black", linewidth = 0.5, linetype="dashed")
 
 plot %>% 
-  ggsave2(filename = c("files/Fig2.jpg")
+  ggsave2(filename = c("submission/Fig2.jpg")
          , plot = ., width = 20, height = 12, units = "cm")
 
 plot %>% 
-  ggsave2(filename = c("files/Fig2.eps")
+  ggsave2(filename = c("submission/Fig2.eps")
          , plot = ., width = 20, height = 12, units = "cm")
 
-include_graphics("files/Fig2.jpg")
+include_graphics("submission/Fig2.jpg")
 ```
 
 # Tools use Wordcloud
@@ -207,10 +205,10 @@ plot <- ~ {
 
 plot %>% 
   plot_grid() %>% 
-  ggsave2(filename = c("files/FigS1.jpg")
+  ggsave2(filename = c("submission/FigS1.jpg")
          , plot = ., width = 20, height = 20, units = "cm")
 
-include_graphics("files/FigS1.jpg")
+include_graphics("submission/FigS1.jpg")
 ```
 
 # Googlesheets connect to scores
@@ -284,13 +282,13 @@ plot <- mc %>%
   facet_wrap(. ~ year, ncol = 2)
 
 plot %>% 
-  ggsave2(filename = "files/Fig3.jpg"
+  ggsave2(filename = "submission/Fig3.jpg"
          , plot = ., width = 30, height = 12, units = "cm")
 
 plot %>% 
-  ggsave2(filename = "files/Fig3.eps"
+  ggsave2(filename = "submission/Fig3.eps"
          , plot = ., width = 30, height = 12, units = "cm")
 
-include_graphics("files/Fig3.jpg")
+include_graphics("submission/Fig3.jpg")
 ```
 
