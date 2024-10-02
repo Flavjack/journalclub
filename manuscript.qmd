@@ -76,7 +76,7 @@ library(magick)
 
 pdf4pub <- list.files("files/", pattern = "Fig.*pdf", full.names = T) 
 
-path <- "DisEd/"
+path <- "prospect/"
 
 imgs <- 1:length(pdf4pub) %>% map(\(x) {
   
