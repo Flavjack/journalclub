@@ -315,9 +315,3 @@ The implementation of a journal club in a plant science course has presented an 
 | 8 | Do you consider the Journal Club relevant to your education? |
 | 9 | Do you agree with its implementation? |
 
-```{=openxml}
-<w:p>
-  <w:pPr>
-    <w:sectPr/>
-  </w:pPr>
-</w:p>
