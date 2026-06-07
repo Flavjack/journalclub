@@ -1,4 +1,4 @@
-# **Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic**
+**Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic**
 
 Flavio Lozano-Islaa, c\*; Elizabeth Heros-Aguilara; Andres Casas-Diazb
 
@@ -19,6 +19,13 @@ ORCID IDs:
 | Andres Casas-Diaz |  | 0000-0001-7461-3924 |
 
 
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:sectPr/>
+  </w:pPr>
+</w:p>
+```
 **DECLARATIONS**
 
 **Funding**
@@ -48,13 +55,27 @@ This study did not require approval from a research ethics committee as per inst
 The authors have no relevant financial or nonfinancial interests to disclose.
 
 
-# **Abstract**
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:sectPr/>
+  </w:pPr>
+</w:p>
+```
+**Abstract**
 
 The COVID-19 pandemic presented significant challenges for both students and educators, particularly because of the virtualization of classes and the consequent lack of practical sessions following the closure of laboratories and experimental fields in universities. The absence of interaction among students and practical classes led to a diminished interest in studies, as students found it difficult to connect theoretical knowledge with practical application. This study explores the implementation of a Journal Club (JC) as a collaborative-metacognitive use of the science literature teaching approach (CMSLTA) to enhance theoretical and practical knowledge through the reading and discussion of scientific literature in an e-learning environment. In this approach, students read scientific articles, write essays, and engage in group discussions. The methodology was applied over two consecutive academic semesters in 2021 and 2022 within plant genetics courses. Academic achievement was evaluated through essay assessments, and surveys were conducted at the end of each semester. The results revealed notable progress in student grades throughout the semester, with over 80% of participants endorsing JC implementation and recognizing its relevance to their education. The Journal Club facilitated the integration of theoretical knowledge covered in lectures and equipped students with various digital research tools.
 
 **Keywords:** crop sciences; e-learning; journal club; research tools; scientific articles
 
 
+```{=openxml}
+<w:p>
+  <w:pPr>
+    <w:sectPr/>
+  </w:pPr>
+</w:p>
+```
 # **Introduction**
 
 On March 11, 2020, the World Health Organization declared that the SARS-CoV-2 outbreak had caused a pandemic. This has created a new challenge for students and lecturers in implementing remote distance learning worldwide [\[1, 2\]](https://www.zotero.org/google-docs/?PHXGqF). Video conferencing tools such as Zoom, Google Meet, and Microsoft Teams have become the predominant means of both education and social interaction.
