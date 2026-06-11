@@ -158,6 +158,9 @@ At the beginning of the course, all the students received training in the use of
 
 **Week 3 \- Reading discussion:** In the first 30 minutes, the students were randomly grouped with members of other groups to discuss their ideas and points of view based on the article read. At the end of that period, all students were returned to the main room for the general discussion guided by the professor. If there were no initial opinions, the professor asked questions and probed their reading to encourage further discussion by presenting different ideas and opinions. In some sessions, slides were used to present case studies or experiences related to the article topic to motivate the discussion. At the end of the session, the students must submit their essays as the final product of the JC.
 
+![![Journal club teaching approach implemented in plant genetics lectures during two academic semesters in 2021 and 2022\. During the training, the students learned different tools to read, write, and discuss scientific documents. In week 1, the article was shared, and the students began reading it. The students in groups started writing their essays in week 2, while in week 3, they discussed in random groups the assigned paper. Four journal clubs were conducted for each academic semester.]() {#fig-teach}](image1)
+
+
 ## ***Instrument***
 
 **Survey design:** At the end of the course a survey was designed to determine the level of satisfaction with JC implementation. In addition, objective questions were included to evaluate the tools that participants learned and used during the course (@tbl-encuesta, ESM 2). The survey was voluntary and anonymous to allow students to express their opinions without any restrictions.
@@ -185,6 +188,9 @@ To evaluate students' perceptions of JC implementation, an open-ended question w
 
 The participants positively criticized the implementation of the reading club methodology, noting that it "increases the level of reading and comprehension" and should be implemented in more courses. One student mentioned that this initiative is "very good, as it teaches students about scientific articles," which fosters academic writing and research. Another recurring point was the encouragement of research and the use of digital tools. One participant commented that the club "greatly promoted research and the use of digital tools," which is crucial in the current educational context. This approach was also praised for its ability to broaden students' horizons and improve their writing skills.
 
+![![Student perception on the application of the journal club teaching approach during two academic semesters in years 2021 and 2022 in the plant genetics lectures. The dashed line represents 75% of the participants and NA represents the questions not answered by the students. The results were based on a survey conducted on 90 students. ]() {#fig-encuesta}](image2)
+
+
 The JC not only facilitated individual learning but also strengthened group dynamics. This promoted "camaraderie and responsibility" among the students. This group interaction was seen as positive, especially in discussion and debate activities about the read articles, which helped students "share and debate ideas" effectively. While the opinions were mostly positive, some participants noted challenges. For example, one student mentioned that some articles were "complex to understand" However, these initial difficulties also led to better learning, as another student commented: "I used to find reading the articles a bit complicated, but now I've learned to interpret them better."
 
 Several students highlighted the importance of this experience for their professional development. One student emphasized that reading scientific articles is "important for our training as professionals," whereas another mentioned how the activity helped improve their critical and analytical skills.
@@ -196,6 +202,9 @@ The present implementation includes essay writing to enhance conceptual understa
 Sections A and D presented an increase in the grades over time in both semesters. In the 2021–2 semester, Group A started with a score of 17.5 and ultimately received a score of 18.4, whereas Group D had scores of 17 and 17.2, respectively, for the same evaluations. In the 2022–1 semester Group A started with 14.8 and ended with a score of 17.9, whereas Group D had 16.5 and 18.6 grades, respectively, for the same evaluations. For both sections, A and D showed a continued improvement in their grading over time during the two academic semesters (Figure 3). Section D reduced their grading in 2021–1 for JCs two and four and JC three in 2022–1 (@fig-score). This reduction was associated with the type of articles (i.e., research articles, @tbl-read).
 
 Section B in the 2022–1 semester did not show an improvement in grading during the period of the JC. The initial grading for this group was 15.5 and ended with a grading of 15.0 (@fig-score).
+
+![![Essays grading during the implementation of journal club during two academic semesters in years 2021 and 2022 for synchronous e-learning at plant genetics lectures in five different sections. The grading system was from 0 to 20, where 20 is the highest grade. The results were based on the grading book from the five sections with a total of 90 students.]() {#fig-score}](image3)
+
 
 # **Discussion** 
 
@@ -279,33 +288,6 @@ The implementation of a journal club in a plant science course has presented an 
   </w:pPr>
 </w:p>
 ```
-
-![Journal club teaching approach implemented in plant genetics lectures during two academic semesters in 2021 and 2022\. During the training, the students learned different tools to read, write, and discuss scientific documents. In week 1, the article was shared, and the students began reading it. The students in groups started writing their essays in week 2, while in week 3, they discussed in random groups the assigned paper. Four journal clubs were conducted for each academic semester.][image1]{#fig-teach}
-
-
-
-```{=openxml}
-<w:p>
-  <w:pPr>
-    <w:sectPr/>
-  </w:pPr>
-</w:p>
-```
-
-![Student perception on the application of the journal club teaching approach during two academic semesters in years 2021 and 2022 in the plant genetics lectures. The dashed line represents 75% of the participants and NA represents the questions not answered by the students. The results were based on a survey conducted on 90 students. ][image2]{#fig-encuesta}
-
-
-
-```{=openxml}
-<w:p>
-  <w:pPr>
-    <w:sectPr/>
-  </w:pPr>
-</w:p>
-```
-
-![Essays grading during the implementation of journal club during two academic semesters in years 2021 and 2022 for synchronous e-learning at plant genetics lectures in five different sections. The grading system was from 0 to 20, where 20 is the highest grade. The results were based on the grading book from the five sections with a total of 90 students.][image3]{#fig-score}
-
 
 
 ```{=openxml}

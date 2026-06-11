@@ -11,7 +11,7 @@ format:
     toc: false
     toc-title: Indice
     section-numbers: true
-    reference-doc: "files/style.docx"
+    reference-doc: "files/Frontiers_Template.docx"
     output-file: "manuscript"
 editor_options: 
   chunk_output_type: console
@@ -29,6 +29,11 @@ crossref:
 #| label: setup
 
 source("http://inkaverse.com/docs.r")
+```
+
+```{r}
+# browseURL("C:\\Users\\LENOVO\\git\\inti\\R\\rticle.R")
+source("C:\\Users\\LENOVO\\git\\inti\\R\\rticle.R")
 ```
 
 ```{r}
