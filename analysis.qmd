@@ -1,136 +1,294 @@
 ---
-title: ""
-author: ""
+title: "Journal Club as a Teaching-Learning Strategy: A Case for Plant Genetics Lectures During the COVID-19 Pandemic"
 format:
   html:
     toc: true
-    toc-expand: true
-    toc-depth: 4
     toc-location: left
     number-sections: true
     self-contained: true
-    code-fold: true
-    output-file: "ESM"
+    output-file: "ESM_3"
 editor_options: 
   chunk_output_type: console
 execute: 
   warning: false
-  message: false
   echo: true
 ---
 
-# Project Setup
+# Setup
 
 ```{r}
 #| label:  setup
 
+library(emmeans) 
+library(multcomp)
 source('https://inkaverse.com/setup.r')
+
+cat("Project: ", getwd())
+session_info()
 ```
 
-# Data import
+# JC pipeline
 
 ```{r}
-gs <- "url" %>% 
-  as_sheets_id()
+library(magick)
 
-fb <- gs %>% 
-  range_read(ss = .,sheet = "fb")
-```
+pipeline <- image_read_pdf("files/pipeline.pdf") %>% 
+  image_crop("1350x1500")
 
-# Research Objectives
+pipeline %>% 
+  image_write(format = "jpg", "submission/Fig1.jpg")
 
-> Matrix URL
-
-## RO 1
-
-```{r}
-
-```
-
-## RO 2
-
-```{r}
-
-```
-
-# PCA
-
-```{r}
-#| eval: false
-
-dtx <- fb
-
-# str(dtx)
+pipeline %>% 
+  image_write(format = "eps", "submission/Fig1.eps")
   
-mv <- PCA(X = dtx, scale.unit = T, graph = F)
-
-fviz_pca_var(mv, col.var = "cos2"
-             , gradient.cols = inti:::paleta()
-             , repel = TRUE
-             )
-
-var <- plot.PCA(mv, choix = c("var"), cex=0.7, )
-
-ind <- plot.PCA(mv, choix = c("ind")
-                , cex = 0.5
-                , label = "ind"
-                , invisible = "quali"
-                )
-
-plot <- list(var, ind) %>% 
-  plot_grid(plotlist = ., ncol = 2, labels = "auto") %>% 
-  ggsave(plot = ., "manuscript/PCA.jpg", units = "cm"
-                , width = 30, height = 15)
-
-plot %>% include_graphics()
-
-pcainfo <- factoextra::get_pca(mv)
-
-sink("files/pca.txt")
-cat("\nPrincipal Component Analysis Results\n")
-summary(mv, nbelements = Inf, nb.dec = 2)
-cat("\nCorrelations between variables and dimensions\n")
-mv$cor
-cat("\nContributions of the variables\n")
-mv$contrib
-sink()
-
-cls <- HCPC(mv, graph = F
-            , nb.clust = -1
-            , metric = "euclidean"
-            , method = "ward"
-            )
-
-sink("files/hcpc.txt")
-cat("\nHierarchical Clustering on Principal Components\n")
-cls$call$t$tree
-cls$desc.ind
-cls$desc.var
-sink()
-
-map <- \() {plot(cls, choice = "map", draw.tree = FALSE)}
-cir <- fviz_dend(cls, type = "circular", cex = 0.5)
-
-plot <- list(map, cir) %>% 
-  plot_grid(plotlist = ., ncol = 2, labels = "auto") %>% 
-  ggsave(plot = ., "manuscript/HCPC.jpg", units = "cm"
-                , width = 30, height = 15)
-
-plot %>% include_graphics()
+include_graphics("submission/Fig1.jpg")
 ```
 
-# References
+# Import data
 
-Broman, K. W., & Woo, K. H. (2017). Data organization in spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
+```{r}
+url <- "https://docs.google.com/spreadsheets/d/1Wz8-30f1KopqqCrmHSly-rdQkeqH8yR19yuGY76Q-k0/edit?usp=sharing"
+# browseURL(gsh)
+gs <- as_sheets_id(url)
+```
 
-Zuur, A. F., Ieno, E. N., & Elphick, C. S. (2009). A protocol for data exploration to avoid common statistical problems. Methods in Ecology and Evolution, 1(1), 3–14. https://doi.org/10.1111/j.2041-210x.2009.00001.x
+# Googlesheets connect to surveys
 
-Francoishusson. (2017, July 13). PCA course using FactoMineR | R-bloggers. R-bloggers. https://www.r-bloggers.com/2017/07/pca-course-using-factominer/
+```{r}
+e21.2 <- gs %>% 
+  range_read("survey21.2") %>% 
+  dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  rename_with(~gsub("Sobre los artículos"
+                   , "Sobre el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Herramientas que aprendí en el curso"
+                   , "Herramientas que aprendí durante el curso"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
+                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  mutate(year = "2021-2", .before = Curso)
 
-Kozak, M., & Piepho, H. (2017). What’s normal anyway? Residual plots are more telling than significance tests when checking ANOVA assumptions. Journal of Agronomy and Crop Science, 204(1), 86–98. https://doi.org/10.1111/jac.12220
 
-Tanaka, E., & Hui, F. K. C. (2019). Symbolic formulae for linear mixed models. In Communications in computer and information science (pp. 3–21). https://doi.org/10.1007/978-981-15-1960-4_1
+e22.1 <- gs %>% 
+  range_read("survey22.1") %>% 
+  dplyr::select("Curso",  matches("Herramientas|artículos|club")) %>% 
+  rename_with(~gsub("Sobre los artículos"
+                   , "Sobre el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Herramientas que aprendí en el curso"
+                   , "Herramientas que aprendí durante el curso"
+                   , x = .x)) %>% 
+  rename_with(~gsub("Opinion, comentario y/o recomendaciones sobre los artículos" 
+                   , "Opinión, comentario y/o recomendaciones para el club de lectura (Journal Club)"
+                   , x = .x)) %>% 
+    mutate(year = "2022-1", .before = Curso)
 
-Schielzeth, H., Dingemanse, N. J., Nakagawa, S., Westneat, D. F., Allegue, H., Teplitsky, C., Réale, D., Dochtermann, N. A., Garamszegi, L. Z., & Araya‐Ajoy, Y. G. (2020). Robustness of linear mixed‐effects models to violations of distributional assumptions. Methods in Ecology and Evolution, 11(9), 1141–1152. https://doi.org/10.1111/2041-210x.13434
+fb <- list(e21.2, e22.1) %>% 
+  bind_rows() %>% 
+  dplyr::select(!contains("Sobre el curso [Herramientas usadas]")) %>% 
+  mutate(across(where(is.character), ~na_if(., "Aprendí a usar"))) %>% 
+  mutate(across(where(is.character), ~na_if(., "Aprendí a usar, Relevante para mi formación"))) %>% 
+  relocate(contains("Opinión"), .after = last_col()) %>% 
+  dplyr::filter(grepl(pattern = "fito", x = Curso, ignore.case = T))
 
-Jambor, H. K. (2025). A checklist for designing and improving the visualization of scientific data. Nature Cell Biology, 27(6), 879–883. https://doi.org/10.1038/s41556-025-01684-z
+names(fb)
+
+fb %>%
+  web_table()
+```
+
+# Summary by question
+
+```{r}
+lbl <- gs %>% 
+  range_read("survey") %>% 
+  dplyr::select(Pregunta, Question) %>%
+  mutate(across(Pregunta, ~gsub("\\¿|\\?", "", .))) %>% 
+  deframe() 
+```
+
+```{r}
+qst <- fb %>% 
+  dplyr::select(matches("Sobre")) %>% 
+  rownames_to_column() %>% 
+  pivot_longer(!rowname) %>% 
+  mutate(name = gsub(".*\\[(.*)\\]", "\\1", name)) %>% 
+  group_by(name, value) %>% 
+  summarise(n = n()) %>% 
+  mutate(per = n/90*100) %>% 
+  ungroup() %>% 
+  mutate(nval = case_when(
+    value %in% "Si" ~ 1
+    , value %in% "Poco/Regular" ~ 2
+    , value %in% "No" ~ 3
+    , TRUE ~ 4
+  )) %>% 
+  mutate(nqs = case_when(
+    name %in% "Estas de acuerdo con su implementación" ~ 1
+    , name %in% "Consideras relevantes para tu formación" ~ 2
+    , name %in% "Te gustarón los artículos" ~ 3
+    , name %in% "El número de artículos fue adecuado" ~ 4
+    , name %in% "Deberiamos leer más artículos" ~ 5
+    , name %in% "Deberiamos leer menos artículos" ~ 6
+    , name %in% "El tiempo para cada JC fue adecuado" ~ 7
+    , name %in% "Los artículos eran difíciles de entender" ~ 8
+    )) %>% 
+  arrange(nqs, nval) %>% 
+  mutate(value = factor(value, levels = unique(value))) %>% 
+  mutate(name = factor(name, levels = unique(name)))
+
+qst %>% str()
+
+qst %>% web_table()
+
+plot <- qst %>% 
+  plot_smr(x = "name"
+           , y = "per"
+           , group = "value"
+           , ylimits = c(0, 101, 10)
+           , xlab = ""
+           , ylab = "Percentage ('%')"
+           , glab = "Answers"
+           , color = c("#669933", "#FFCC00", "#CC3333", "gray")
+           , gtext = c("Yes", "Few/Regular", "No", "NA")
+           ) +
+  geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
+  scale_x_discrete(labels = lbl) + 
+  coord_flip() +
+  geom_hline(yintercept = 75, color = "black", linewidth = 0.5, linetype="dashed")
+
+plot %>% 
+  ggsave2(filename = c("submission/Fig2.jpg")
+         , plot = ., width = 20, height = 12, units = "cm")
+
+plot %>% 
+  ggsave2(filename = c("submission/Fig2.eps")
+         , plot = ., width = 20, height = 12, units = "cm")
+
+include_graphics("submission/Fig2.jpg")
+```
+
+# Tools use Wordcloud
+
+```{r}
+library(wordcloud)
+
+recode <- c("Google académico" = "Google Scholar"
+            , "Tablas dinámicas" = "Pivot table")
+
+text <- fb %>% 
+  rename(tools = "Herramientas que aprendí durante el curso") %>% 
+  dplyr::select(tools) %>% 
+  separate_rows(tools, sep = ",") %>% 
+  mutate(across(everything(), ~ trimws(.))) %>% 
+  drop_na() %>% 
+  group_by(tools) %>% 
+  summarise(n = n()) %>% 
+  arrange(desc(n)) %>% 
+  mutate(freq = n/sum(n)*100) %>% 
+  mutate(tools = recode(tools, !!!recode))
+
+set.seed(1)
+
+plot <- ~ {
+  
+  wordcloud(words = text$tools
+          , freq = text$freq
+          , scale = c(5,0.5)
+          , min.freq = 1
+          , random.order = FALSE 
+          , colors = rev(c("forestgreen", "blue", "orange", "purple", "gray"))
+          )
+  
+}
+
+plot %>% 
+  plot_grid() %>% 
+  ggsave2(filename = c("submission/FigS1.jpg")
+         , plot = ., width = 20, height = 20, units = "cm")
+
+include_graphics("submission/FigS1.jpg")
+```
+
+# Googlesheets connect to scores
+
+```{r}
+s21.2 <- gs %>% 
+  range_read("score21.2") %>% 
+  dplyr::select(matches("correo|JC-")) %>% 
+  rename_with(~gsub("Dirección de correo"
+                   , "user"
+                   , x = .x)) %>% 
+  pivot_longer(!user, names_to = "jc", values_to = "score") %>% 
+  mutate(across(everything(), as.character)) %>% 
+  mutate(across(where(is.character), ~na_if(., "-"))) %>% 
+  mutate(section = gsub(".*\\_(.*).*\\(Real\\)", "\\1", jc), .after = user) %>% 
+  mutate(across(c(user, jc), ~gsub("\\D", "", .x))) %>% 
+  mutate(across(score, as.numeric)) %>% 
+  drop_na(score) %>% 
+  mutate(year = "2021-2", .before = user)
+
+s22.1 <- gs %>% 
+  range_read("score22.1") %>% 
+  dplyr::select(matches("correo|JC-")) %>% 
+  rename_with(~gsub("Dirección de correo"
+                   , "user"
+                   , x = .x)) %>% 
+  pivot_longer(!user, names_to = "jc", values_to = "score") %>% 
+  mutate(across(everything(), as.character)) %>% 
+  mutate(across(where(is.character), ~na_if(., "-"))) %>% 
+  mutate(section = gsub(".*\\((.*)\\).*\\(Real\\)", "\\1", jc), .after = user) %>% 
+  mutate(across(c(user, jc), ~gsub("\\D", "", .x))) %>% 
+  mutate(across(score, as.numeric)) %>% 
+  drop_na(score) %>% 
+  mutate(year = "2022-1", .before = user)
+  
+scores <- list(s21.2, s22.1) %>% 
+  bind_rows() %>% 
+  mutate(across(where(is.character), trimws))
+
+scores$user %>%
+  unique() %>% 
+  length()
+
+str(scores)
+
+scores %>% web_table()
+
+model <- scores %>% 
+  lm(score ~ jc*section*year, data = .)
+
+anova(model)
+
+mc <- emmeans(model, ~ jc | section | year) %>% 
+  cld(Letters = letters, reversed = T) %>% 
+  mutate(across(".group", ~ trimws(.)))
+
+mc
+
+plot <- mc %>% 
+  plot_smr(type = "line"
+           , x = "jc"
+           , y = "emmean"
+           , group = "section"
+           , ylimits = c(14, 20, 1)
+           , ylab = "Score (0-20)"
+           , xlab = "Journal Club"
+           , glab = "Section"
+           , sig = ".group"
+           # , error = "SE"
+           ) +
+  facet_wrap(. ~ year, ncol = 2)
+
+plot %>% 
+  ggsave2(filename = "submission/Fig3.jpg"
+         , plot = ., width = 30, height = 12, units = "cm")
+
+plot %>% 
+  ggsave2(filename = "submission/Fig3.eps"
+         , plot = ., width = 30, height = 12, units = "cm")
+
+include_graphics("submission/Fig3.jpg")
+```
+
